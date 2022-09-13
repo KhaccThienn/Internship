@@ -1,0 +1,22 @@
+.overlays {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+.btn-pages{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 10px;
+  padding: 10px 32px 10px 32px !important;
+  color: black;
+  background-color: #FFFFFF;
+  border: 1px solid black !important;
+  transition: 0.2s !important;
+}
+.btn-pages:hover{
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
