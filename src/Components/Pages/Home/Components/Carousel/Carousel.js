@@ -18,12 +18,12 @@ const Carousels = () => (
   <div>
     <Carousel renderDots={false} style={styles}>
       {image.map((item, i) => (
-        <div className={cx("position-relative")}>
+        <div className={cx("position-relative")} key={i}>
           <img
             draggable={false}
             src={item}
             alt="..."
-            key={i}
+            
             className="card-img"
           />
           <div className={cx("overlays", "text-white")}>
