@@ -2,7 +2,13 @@ import React from 'react'
 
 function Header() {
   return (
-    <div>Header</div>
+    <div className='container'>
+      <div className='row'>
+        <div className='col-md-4'>
+          
+        </div>
+      </div>
+    </div>
   )
 }
 
