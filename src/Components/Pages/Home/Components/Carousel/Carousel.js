@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import style from "./carousels.module.css";
 
 const cx = classNames.bind(style)
+
 const image = [
   "https://wpbingosite.com/wordpress/wrish/wp-content/uploads/2021/10/slider1.jpg",
   "https://wpbingosite.com/wordpress/wrish/wp-content/uploads/2021/10/slider2.jpg",
