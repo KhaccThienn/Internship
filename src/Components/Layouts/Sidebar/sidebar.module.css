@@ -1,0 +1,48 @@
+.bg-sidebar {
+  border-right: 1px solid black;
+}
+
+.list-nav ul li {
+  list-style: none;
+}
+
+.CreateButton {
+  align-items: center;
+  background-color: #1473e6;
+  border-color: #1473e6;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: 8px 0 2px;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 50px;
+}
+.home{
+  margin: 20px auto !important;
+  width: 70px;
+  /* height: 70px; */
+  padding-bottom: 5px !important;
+  border: 1px solid #11111130;
+  border-radius: 15px;
+}
+a{
+  color: black !important;
+}
+a:hover{
+  text-decoration: none;
+  cursor: pointer !important;
+}
+.list{
+  padding: 0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p{
+  padding: 0 !important;
+}
