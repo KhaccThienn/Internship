@@ -8,6 +8,7 @@
     .header {
         font-size: 2rem;
         overflow: hidden;
+        background-color: #fff !important;
     }
     .menu-mobile {
         color: #707070;
@@ -20,9 +21,9 @@
         text-align: left;
     }
     .bt-mobile{
-        border-radius: 10px;
-        background-color:#F05123;
-        color: white;
+        border-radius: 10px !important;
+        background-color:#F05123 !important;
+        color: white !important;
         width: 100px;
         height: 35px;
         border: 0px;
@@ -40,7 +41,7 @@
 /* tablet */
 @media (min-width: 600px ) and (max-width: 1024px){
     .header {
-        
+        background-color: #fff !important;
         overflow: hidden;
     }
     .menu-mobile {
@@ -55,9 +56,9 @@
         padding-top: 10px;
     }
     .bt-header{
-        border-radius: 10px;
-        background-color:#F05123;
-        color: white;
+        border-radius: 10px !important;
+        background-color:#F05123 !important;
+        color: white !important;
         width: 150px;
         height: 35px;
         border: 0px;
@@ -88,6 +89,7 @@
 /* laptop */
 @media (min-width: 1025px ){
     .header {
+        background-color: #fff !important;
         padding: 30px;
         overflow: hidden;
     }
@@ -116,9 +118,9 @@
         padding-left: 40px;
     }
     .bt-header{
-        border-radius: 10px;
-        background-color:#F05123;
-        color: white;
+        border-radius: 10px !important;
+        background-color:#F05123 !important;
+        color: white !important;
         width: 150px;
         height: 35px;
         border: 0px;
