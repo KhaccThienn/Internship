@@ -1,10 +1,13 @@
 import React from 'react';
 import classNames from 'classnames/bind';
-import style from './header.module.css'
+import style from './header.module.css';
 import { FaSearch } from 'react-icons/fa';
 import { GrMenu } from 'react-icons/gr';
 import { AiOutlineShoppingCart,AiOutlineSearch } from 'react-icons/ai';
 import logo from "~/Asset/logo.png";
+import 'antd/dist/antd.css';
+import './header.module.css';
+import { Button, DatePicker, Space, version } from "antd";
 
 let cx = classNames.bind(style);  
 
@@ -12,9 +15,9 @@ function Header() {
   return (
     <div>
       {/* laptop */}
-      {/* <div className={cx('container-fluid', 'header')}>
+      <div className={cx('container-fluid', 'header')}>
         <div className='row'>
-          <div className='col-lg-4'>
+          <div className={cx('col-lg-4','col-md-2', 'col-2')}>
             <div className='row'>
               <div className={cx('col-lg-2', 'logo-header')}>
                   <img src={logo}/>
@@ -24,22 +27,23 @@ function Header() {
               </div>
             </div>
           </div>
-          <div className='col-lg-6 position-relative'>
+          <div className={cx('col-lg-6', 'position-relative', 'col-md-7','col-5', 'input-form')}>
               <input className={cx('input-header', )} placeholder='Tim kiem khoa hoc, bai viet, v.v...'/>
               <AiOutlineSearch  className={cx('icon-search')}/>
           </div>
-          <div className={cx('col-lg-2', 'header-log')}>
+          <div className={cx('col-lg-2', 'header-log', 'col-md-3','col-4')}>
             <div className='row'>
               <div className={cx('col-lg-3', 'cart-icon')}>
                   <AiOutlineShoppingCart />
               </div>
-              <div className='col-lg-9'>
-                <button className={cx('bt-header')}>Đăng Nhập</button>
+              <div className={cx('col-lg-9', 'col-4',)}>
+                <Button   className={cx('bt-header')}>Đăng Nhập</Button>
+                
               </div>
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* mobile */}
       {/* <div className={cx('container-fluid', 'header')}>
@@ -54,13 +58,13 @@ function Header() {
             <AiOutlineSearch  className={cx('icon-search')}/>
           </div>
           <div className={cx('col-4')}>
-            <button className={cx('bt-mobile')}>Đăng Nhập</button>
+            <Button type='danger'  className={cx('bt-header')}>Đăng Nhập</Button>
           </div>
         </div>
       </div> */}
 
       {/* tablet */}
-      <div className={cx('container-fluid', 'header')}>
+      {/* <div className={cx('container-fluid', 'header')}>
         <div className='row'>
           <div className='col-md-2'>
             <GrMenu className={cx('menu-mobile')}/>
@@ -70,10 +74,10 @@ function Header() {
               <AiOutlineSearch  className={cx('icon-search')}/>
           </div>
           <div className={cx('col-md-3', 'icon-log')}>            
-            <button className={cx('bt-header')}>Đăng Nhập</button>              
+            <Button type='danger'  className={cx('bt-header')}>Đăng Nhập</Button>              
           </div>
         </div>
-      </div>
+      </div> */}
 
     </div>
     
