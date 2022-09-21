@@ -2,6 +2,7 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import style from './Footer.module.css';
 import logo from "~/Asset/logo.png";
+import {Link} from 'react-router-dom';
 import { FaYoutubeSquare, FaFacebookSquare, FaTiktok } from 'react-icons/fa';
 
 const cx = classNames.bind(style);
@@ -31,7 +32,7 @@ function Footer() {
           <div className='col-lg-3 col-md-6 col-sm-12'>
             <div className={cx('footer-font', 'ml-5')}>
               <h4 className={cx('mb-4')}>F9</h4>
-              <p>Giới Thiệu</p>
+              <Link to='/about' className={cx('text-light', 'text-decoration-none','text-about')}>Giới thiệu</Link>
               <p>Cơ Hội Việc Làm</p>
             </div>
           </div>
