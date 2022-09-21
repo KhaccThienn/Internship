@@ -4,7 +4,7 @@ import style from './Footer.module.css';
 import logo from "~/Asset/logo.png";
 import {Link} from 'react-router-dom';
 import { FaYoutubeSquare, FaFacebookSquare, FaTiktok } from 'react-icons/fa';
-
+import { Link } from "react-router-dom"
 const cx = classNames.bind(style);
 
 function Footer() {
@@ -39,8 +39,11 @@ function Footer() {
 
           <div className='col-lg-3 col-md-6 col-sm-12'>
             <div className={cx('footer-font', 'ml-3')}>
+            
               <h4 className={cx('mb-4')}>Hỗ Trợ</h4>
-              <p>Liên Hệ</p>
+              <Link to="/contact" className={cx("cursor-pointer")}>
+                <p>Liên Hệ</p>
+              </Link>
               <p>Bảo Mật</p>
               <p>Điều Khoản</p>
             </div>

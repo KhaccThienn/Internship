@@ -3,10 +3,10 @@ import classNames from 'classnames/bind';
 import Footer from './Footer/Footer'
 import Header from './Header/Header'
 import Sidebar from './Sidebar/Sidebar'
-
 import styled from "./master.module.css";
 
 const cx = classNames.bind(styled)
+
 
 function MasterLayouts({children}) {
   return (

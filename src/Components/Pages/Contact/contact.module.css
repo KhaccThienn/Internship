@@ -1,0 +1,32 @@
+.text-contact{
+    font-size: 15px;
+    font-weight: bold;
+}
+.text-contact p{
+    padding: auto;
+    margin: 10px;
+}
+::placeholder{
+    font-size: 12px;
+    text-align: left;
+    top: 10px;
+}
+.input-contact{
+    width: 440px;
+    height: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+.text-input p{
+    font-weight: bold;
+    /* margin-top: 20px; */
+}
+.input-contact-nd{
+    width: 440px;
+    height: 110px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: -5px;
+    text-align: start;
+}
