@@ -7,6 +7,8 @@ import Contact from "./Components/Pages/Contact/Contact";
 import Learn from "./Components/Pages/Learn/Learn";
 import Road from "./Components/Pages/Road/Road";
 import Test from "./Components/Pages/Test/Test";
+import Upcomming from "./Components/Pages/Upcomming/Upcomming";
+import DetailFree from "./Components/Pages/DetailFree/DetailFree";
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/contact" element={< MasterLayouts children={<Contact />} />} />
         <Route path="/test" element={< MasterLayouts children={<Test />} />} />
         <Route path="/upcomming" element={< MasterLayouts children={<Upcomming />} />} />
+        <Route path="/dFree" element={< MasterLayouts children={<DetailFree />} />} />
       </Routes>
     </>
   );
