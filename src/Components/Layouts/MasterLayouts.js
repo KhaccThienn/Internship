@@ -11,7 +11,7 @@ const cx = classNames.bind(styled)
 function MasterLayouts({children}) {
   return (
     <>
-      <div className={cx("sticky-top")}>
+      <div className={cx('posi')}>
         <Header />
       </div>
       <div className={cx('container-fluid')}>
