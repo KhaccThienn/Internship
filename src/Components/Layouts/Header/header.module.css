@@ -4,12 +4,14 @@
 }
 
 /* mobile */
-@media (min-width: 0) and (max-width: 480px){
+@media (min-width: 0) and (max-width: 480px) {
+
     .header {
         font-size: 2rem;
         overflow: hidden;
         background-color: #fff !important;
     }
+
     .menu-mobile {
         color: #707070;
         flex: 1 1;
@@ -20,30 +22,55 @@
         display: block;
         text-align: left;
     }
-    .bt-mobile{
+
+    .bt-header {
         border-radius: 10px !important;
-        background-color:#F05123 !important;
+        background-color: #F05123 !important;
         color: white !important;
         width: 100px;
         height: 35px;
         border: 0px;
         font-size: 15px;
-        right: 20px !important;
+        bottom: 10%;
     }
-    .icon-search{
-        position: absolute;   
+
+    .icon-search {
+        position: absolute;
         left: 20px;
-        top: 37%;
+        top: 30%;
         font-size: 25px !important;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+        ;
+    }
+    li {
+        list-style: none !important;
+    }
+    .sidebar-moblie {
+        width: 250px;
+        height: 300px;
+        border: 1px solid;
+        font-size: 20px;
+    }
+    .sidebar-moblie li p {
+        margin-left : 20px;
+        margin-top: 10px;
     }
 }
 
 /* tablet */
-@media (min-width: 600px ) and (max-width: 1024px){
+@media (min-width: 480px) and (max-width: 980px) {
     .header {
         background-color: #fff !important;
         overflow: hidden;
     }
+
     .menu-mobile {
         color: #707070;
         flex: 1 1;
@@ -55,83 +82,144 @@
         text-align: left;
         padding-top: 10px;
     }
-    .bt-header{
+
+    .bt-header {
         border-radius: 10px !important;
-        background-color:#F05123 !important;
+        background-color: #F05123 !important;
         color: white !important;
         width: 150px;
         height: 35px;
         border: 0px;
-        
+
     }
-    .icon-log{
+
+    .icon-log {
         padding-top: 10px;
     }
-    .input-header{
+
+    .input-header {
         width: 400px;
         height: 35px;
         border-radius: 10px;
     }
-    .icon-search{
+
+    .icon-search {
         position: absolute;
         left: 25px;
         top: 35%;
         font-size: 25px !important;
     }
-    ::placeholder{
+
+    ::placeholder {
         padding-left: 40px;
     }
-    .input-form{
+
+    .input-form {
         padding-top: 10px;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+        ;
+    }
+    li {
+        list-style: none !important;
+    }
+    .sidebar-moblie {
+        width: 400px;
+        height: 300px;
+        border: 1px solid;
+        font-size: 20px;
+    }
+    .sidebar-moblie li p {
+        margin-left : 20px;
+        margin-top: 10px;
+    }
+    .fom-tablet{
+        display: none !important;
+        padding: 0 !important;
     }
 }
 
 /* laptop */
-@media (min-width: 1025px ){
+@media (min-width: 1024px) {
+    .posi {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 1020
+    }
+
     .header {
         background-color: #fff !important;
         padding: 30px;
         overflow: hidden;
     }
-    .logo-header{
+
+    .logo-header {
         text-align: right;
     }
+
     .logo-header img {
         width: 40px;
     }
-    .font-logo{
+
+    .font-logo {
         font-size: 16px;
         font-weight: bold;
     }
-    .input-header{
+
+    .input-header {
         width: 500px;
         height: 40px;
         border-radius: 10px;
     }
-    .icon-search{
+
+    .icon-search {
         position: absolute;
         left: 25px;
         top: 20%;
         font-size: 25px !important;
     }
-    ::placeholder{
+
+    ::placeholder {
         padding-left: 40px;
     }
-    .bt-header{
+
+    .bt-header {
         border-radius: 10px !important;
-        background-color:#F05123 !important;
+        background-color: #F05123 !important;
         color: white !important;
         width: 150px;
         height: 35px;
         border: 0px;
     }
-    .cart-icon{
+
+    .cart-icon {
         font-size: 30px;
         color: orange;
         bottom: 10px;
         left: 10px;
     }
-    .header-log{
-       float: right;
+
+    .header-log {
+        float: right;
+    }
+
+    .mobile {
+        display: none;
+        ;
+    }
+
+    .tablet {
+        display: none;
+        ;
+    }
+    .sidebar-moblie {
+        display: none;
     }
 }

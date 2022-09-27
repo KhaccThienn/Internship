@@ -1,3 +1,26 @@
-.side{
-  position: fixed;
+/* mobile */
+@media (min-width: 0) and (max-width: 480px) {
+  .side {
+    display: none !important;
+  }
+}
+
+/* tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .side {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .side {
+    position: fixed;
+  }
+
+  .posi {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020
+  }
 }
