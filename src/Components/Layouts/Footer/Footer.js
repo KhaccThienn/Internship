@@ -4,7 +4,6 @@ import style from './Footer.module.css';
 import logo from "~/Asset/logo.png";
 import {Link} from 'react-router-dom';
 import { FaYoutubeSquare, FaFacebookSquare, FaTiktok } from 'react-icons/fa';
-import { Link } from "react-router-dom"
 const cx = classNames.bind(style);
 
 function Footer() {
