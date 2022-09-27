@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import style from './Footer.module.css';
+import { Link } from "react-router-dom"
 import logo from "~/Asset/logo.png";
-import {Link} from 'react-router-dom';
 import { FaYoutubeSquare, FaFacebookSquare, FaTiktok } from 'react-icons/fa';
 const cx = classNames.bind(style);
 

@@ -16,9 +16,7 @@
   display: flex;
   height: 50px;
   justify-content: center;
-  margin: 8px 0 2px;
-  -webkit-user-select: none;
-  -ms-user-select: none;
+  margin: 8px auto;
   user-select: none;
   width: 50px;
 }
