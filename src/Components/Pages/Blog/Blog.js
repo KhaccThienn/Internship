@@ -1,8 +1,11 @@
 import React from 'react'
+import style from "./"
 
 function Blog() {
   return (
-    <div>Blog</div>
+    <div>
+      
+    </div>
   )
 }
 
