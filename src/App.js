@@ -19,6 +19,7 @@ function App() {
         <Route path="/about" element={< MasterLayouts children={<About />} />} />
         <Route path="/contact" element={< MasterLayouts children={<Contact />} />} />
         <Route path="/test" element={< MasterLayouts children={<Test />} />} />
+        <Route path="/upcomming" element={< MasterLayouts children={<Upcomming />} />} />
       </Routes>
     </>
   );
