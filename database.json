@@ -1,20 +1,22 @@
 {
-    "course":[
-        {
-            "id": 1,
-            "img":"https://htmldemo.net/edumall/edumall/assets/images/courses/courses-1.jpg",
-            "name": "Khóa Học Kiến Thức Nền Tảng",
-            "author":"LuanNV",
-            "content":"Đây là môn cực kỳ quan trọng vì nó giúp ta khái quát tổng quan về ngành cũng như các kiến thức nền về cấu tạo, nguyên lý hoạt động của máy tính, đại số Boolean (cái này mình khoái lắm), cách chuyển đổi các cơ số, RAM là gì, Ổ cứng hoạt động ra sao, CPU gồm những bộ phận nào, ALU, BUS có chức năng gì,... Bên trường mình thì môn này là môn kiến trúc máy tính."
-            
-        },
-        {
-            "id": 2,
-            "img":"https://htmldemo.net/edumall/edumall/assets/images/courses/courses-2.jpg",
-            "name": "Khóa Học Responsive Web Design",
-            "author": "LuongNA",
-            "content": ""
-
-        }
-    ]
+  "course": [
+    {
+      "id": 1,
+      "img": "https://htmldemo.net/edumall/edumall/assets/images/courses/courses-1.jpg",
+      "name": "Khóa Học Kiến Thức Nền Tảng",
+      "author": "LuanNV",
+      "content": "Đây là môn cực kỳ quan trọng vì nó giúp ta khái quát tổng quan về ngành cũng như các kiến thức nền về cấu tạo, nguyên lý hoạt động của máy tính, đại số Boolean (cái này mình khoái lắm), cách chuyển đổi các cơ số, RAM là gì, Ổ cứng hoạt động ra sao, CPU gồm những bộ phận nào, ALU, BUS có chức năng gì,... Bên trường mình thì môn này là môn kiến trúc máy tính."
+    },
+    {
+      "id": 2,
+      "img": "https://htmldemo.net/edumall/edumall/assets/images/courses/courses-2.jpg",
+      "name": "Khóa Học Responsive Web Design",
+      "author": "LuongNA",
+      "content": ""
+    }
+  ],
+  "FECourse": [
+    {}
+  ],
+  "homePage": []
 }

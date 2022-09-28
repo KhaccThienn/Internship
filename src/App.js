@@ -11,6 +11,8 @@ import Register from "./Components/Pages/Register/Register";
 import Road from "./Components/Pages/Road/Road";
 import Test from "./Components/Pages/Test/Test";
 import Upcomming from "./Components/Pages/Upcomming/Upcomming";
+import DetailFree from "./Components/Pages/DetailFree/DetailFree";
+import Cart from "./Components/Pages/Cart/Cart";
 
 function App() {
   return (
@@ -26,7 +28,8 @@ function App() {
         <Route path="/upcomming" element={< MasterLayouts children={<Upcomming />} />} />
         <Route path="/frontend" element={< MasterLayouts children={<FrontEnd />} />} />
         <Route path="/login" element={< MasterLayouts children={<Login />} />} />
-        <Route path="/register" element={< MasterLayouts children={<Register />} />} />
+        <Route path="/dFree" element={< MasterLayouts children={<DetailFree />} />} />
+        <Route path="/cart" element={< MasterLayouts children={<Cart />} />} />
       </Routes>
     </>
   );
