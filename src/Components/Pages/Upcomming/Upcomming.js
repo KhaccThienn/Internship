@@ -22,4 +22,4 @@ function Upcomming() {
   )
 }
 
-export default Upcomming
+export default Upcomming;
