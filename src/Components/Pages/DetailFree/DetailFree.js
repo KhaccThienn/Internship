@@ -158,7 +158,7 @@ function DetailFree() {
               </div>
             </div>  
 
-            <div className={cx("container-fruid"," dongke")}></div>
+            <div className={cx("container-fruid","dongke")}></div>
 
             <div className={cx("container-fruid", "rikacmt")}>
               <div className="row">
