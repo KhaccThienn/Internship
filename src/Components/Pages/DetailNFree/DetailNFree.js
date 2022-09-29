@@ -7,6 +7,8 @@ import { MdLibraryBooks } from 'react-icons/md';
 import css from '~/Asset/htmlpro.png'
 import anhluan from '~/Asset/gv_nguyen_van_luan.jpg'
 import anhluong from '~/Asset/gv_nguyen_anh_luong.jpg'
+import rika from '~/Asset/rika.png'
+import oe96bk from '~/Asset/96bk.png'
 
 let cx = classNames.bind(style);
 
@@ -163,7 +165,7 @@ function DetailNFree() {
             <div className={cx("container-fruid", "rikacmt")}>
               <div className="row">
                 <div className="col-lg-6">
-                  <img src="Data/image/rika.png" alt=""/>
+                  <img src={rika} alt=""/>
                   <a className={cx("tenngcmt")}>Rika</a>
                 </div>
                 <div className={cx("col-lg-6", "p-0", "cmt")}>
@@ -177,7 +179,7 @@ function DetailNFree() {
             <div className={cx("container-fruid", "rikacmt")}>
               <div className="row">
                 <div className="col-lg-6">
-                  <img src="Data/image/96bk.png" alt=""/>
+                  <img src={oe96bk} alt=""/>
                   <a className={cx("tenngcmt")}>Ông em 96 cơ khí bách khoa</a>
                 </div>
                 <div className={cx("col-lg-6", "p-0", "cmt")}>
