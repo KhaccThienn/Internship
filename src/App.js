@@ -13,6 +13,7 @@ import Test from "./Components/Pages/Test/Test";
 import Upcomming from "./Components/Pages/Upcomming/Upcomming";
 import DetailFree from "./Components/Pages/DetailFree/DetailFree";
 import Cart from "./Components/Pages/Cart/Cart";
+import DetailNFree from "./Components/Pages/DetailNFree/DetailNFree";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/frontend" element={< MasterLayouts children={<FrontEnd />} />} />
         <Route path="/login" element={< MasterLayouts children={<Login />} />} />
         <Route path="/dFree" element={< MasterLayouts children={<DetailFree />} />} />
+        <Route path="/dNFree" element={< MasterLayouts children={<DetailNFree />} />} />
         <Route path="/cart" element={< MasterLayouts children={<Cart />} />} />
       </Routes>
     </>
