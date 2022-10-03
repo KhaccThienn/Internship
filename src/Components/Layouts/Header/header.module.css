@@ -7,8 +7,8 @@
 @media (min-width: 0) and (max-width: 480px) {
 
     .header {
-        box-shadow: 1px 3px 9px 2px grey;
-        border-bottom: 1px solid gray;
+        box-shadow: -1px 1px 7px 1px #b1b1b1cf;
+        border-bottom: 1px solid #b1b1b1cf;
         background-color: #fff !important;
         padding: 30px;
         overflow: hidden;
@@ -72,8 +72,8 @@
 /* tablet */
 @media (min-width: 480px) and (max-width: 980px) {
     .header {
-        box-shadow: 1px 3px 9px 2px grey;
-        border-bottom: 1px solid gray;
+        box-shadow: -1px 1px 7px 1px #b1b1b1cf;
+        border-bottom: 1px solid #b1b1b1cf;
         background-color: #fff !important;
         padding: 30px;
         overflow: hidden;
@@ -167,8 +167,8 @@
     }
 
     .header {
-        box-shadow: 1px 3px 9px 2px grey;
-        border-bottom: 1px solid gray;
+        box-shadow: -1px 1px 7px 1px #b1b1b1cf;
+        border-bottom: 1px solid #b1b1b1cf;
         background-color: #fff !important;
         padding: 30px;
         overflow: hidden;

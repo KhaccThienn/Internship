@@ -41,15 +41,15 @@ function About() {
       <div className='about-team mt-5'>
         <h3 className='font-weight-bold text-center'>Những Thành Viên Của Chúng Tôi</h3>
         <div className='row mt-4'>
-          <div style={{ overflow: "hidden" }} className={cx('col-lg-4', 'col-md-4', 'col-sm-12')}>
+          <div className={cx('col-lg-4', 'col-md-4', 'col-sm-12','img-team')}>
             <img src={le_thien} alt='...' className={cx('card-img', 'about-img')} />
             <p className={cx('text-center', 'font-about', 'mt-2')}>Team Leader Lê Khắc Thiện</p>
           </div>
-          <div style={{ overflow: "hidden" }} className={cx('col-lg-4', 'col-md-4', 'col-sm-12')}>
+          <div className={cx('col-lg-4', 'col-md-4', 'col-sm-12','img-team')}>
             <img src={yen} alt='...' className={cx('card-img', 'about-img')} />
             <p className={cx('text-center', 'font-about', 'mt-2')}>Nguyễn Thị Kim Yến</p>
           </div>
-          <div style={{ overflow: "hidden" }} className={cx('col-lg-4', 'col-md-4', 'col-sm-12')}>
+          <div className={cx('col-lg-4', 'col-md-4', 'col-sm-12','img-team')}>
             <img src={hau_ngo} alt='...' className={cx('card-img', 'about-img')} />
             <p className={cx('text-center', 'font-about', 'mt-2')}>Ngô Văn Hậu</p>
           </div>

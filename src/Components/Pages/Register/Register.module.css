@@ -1,22 +1,46 @@
-.bg-login {
-    background-image: url(../../../Asset/bgres.png);
+.bg-register{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-clip: content-box;
     height: 100%;
+    background-image: url("../../../Asset/bgres.png") !important;
 }
-
-.bg-form {
-    width: 45%;
-    left: 40%;
-    top: 17%;
-    margin-top: 50px;
-    background: #fff;
-    opacity: 0.8;
+.from{
+    background-color: #fff;
+    padding: 10px;
     border-radius: 15px;
 }
+.form-text {
+    font-weight: bold;
+}
 
-.login-form::placeholder {
-    padding: 0 !important;
+.form-login {
+    margin-left: 433px !important;
+}
+
+.form-input {
+    border-radius: 0 !important;
+    background-color: #f7f7f7;
+    outline: none !important;
+    box-shadow: none !important;
+    width: 100%;
+}
+
+.btn-button {
+    color: #fff !important;
+    font-weight: 600 !important;
+    background: #9c4fc2 !important;
+    border-radius: 5px !important;
+    padding: 7px 200px;
+    font-weight: bold;
+}
+
+.err {
+    color: tomato;
+}
+
+.form-submit{
+    margin: 0 auto !important;
+    width: 500px;
 }

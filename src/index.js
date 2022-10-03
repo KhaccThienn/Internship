@@ -5,12 +5,20 @@ import App from "./App";
 import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/js/bootstrap.bundle";
 import "./index.css";
+import {createStore} from 'redux';
+import { Provider } from "react-redux";
 import reportWebVitals from "./reportWebVitals";
+import rootReducer from "./redux/reducers";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const store = createStore(rootReducer);
+
 root.render(
   <BrowserRouter>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </BrowserRouter>
 );
 

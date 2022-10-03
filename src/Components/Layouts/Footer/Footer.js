@@ -31,7 +31,7 @@ function Footer() {
           <div className='col-lg-3 col-md-6 col-sm-12'>
             <div className={cx('footer-font', 'ml-5')}>
               <h4 className={cx('mb-4')}>F9</h4>
-              <Link to='/about' className={cx('text-light', 'text-decoration-none','text-about')}>Giới thiệu</Link>
+              <p><Link to='/about' className={cx('text-light', 'text-decoration-none','text-about')}>Giới thiệu</Link></p>
               <p>Cơ Hội Việc Làm</p>
             </div>
           </div>

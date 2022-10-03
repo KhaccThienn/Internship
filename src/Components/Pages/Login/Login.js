@@ -1,47 +1,107 @@
-import React from 'react';
-import classNames from 'classnames/bind';
+/* eslint-disable jsx-a11y/iframe-has-title */
+import React, { useState } from 'react';
 import style from './Login.module.css';
-import * as Yup from 'yup';
+import classNames from 'classnames/bind';
+import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
-
+import * as Yup from 'yup';
+import { getUsers } from '~/services/user.service';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux/es/exports';
+import { saveUserToLocalStorage } from '~/redux/actions/UserAction';
 
 const cx = classNames.bind(style);
 
-// const initValues = {
-//   name: "",
-//   password: "",
-// }
+const initValues = {
+  email: "",
+  password: ""
+}
 
-// const validate =  Yup.object().shape({
+const validate = Yup.object().shape({
+  email: Yup.string().required("Vui lòng nhập email").email("Email không đúng định dạng"),
+  password: Yup.string().required("Vui lòng nhập mật khẩu")
+});
 
-// })
 
 function Login() {
-  return (
-    <div className={cx('bg-login')}>
-       <div className="row justify-content-between">
-        <div className="col"></div>
-        <div className={cx('bg-form','p-5','mt-5')}>
-          <h4 className="text-center font-weight-bold">Đăng Nhập</h4>
-          <form>
-            <div className="form-group">
-              <input type="text" className={cx('form-control','login-form')} id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Tên Đăng Nhập..."/>
-            </div>
-            <div className="form-group">
-              <input type="password" className={cx('form-control','login-form')} id="exampleInputPassword1"
-                placeholder="Mật Khẩu..."/>
-            </div>
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const [error, setError] = useState("");
+  const formik = useFormik({
+    initialValues: initValues,
+    validationSchema: validate,
+    onSubmit: async data => {
+      let response = await getUsers();
+      let users = response.data;
+      let findUser = users.filter(u => {
+        return data.email === u.email && data.password === u.password;
+      });
+      let user = findUser[0];
+      if (user) {
+        dispatch(saveUserToLocalStorage(user));
+        navigate("/");
+      } else {
 
-            <button type="submit" className="btn btn-primary w-100 p-2">Submit</button>
-            <p className='mt-3'>Nếu Bạn Chưa Có Tài Khoản Đăng Nhập / <a href="register.html" className="text-decoration-none">Đăng Ký
-                Ngay!</a></p>
-          </form>
-        </div>
-        <div className="col"></div>
-    </div>
+        setError("Email hoac mat khau khong chinh xac")
+
+      }
+    }
+  })
+
+  return (
+    <div className={cx('bg-login', 'd-block')}>
+      <div >
+        <form onSubmit={formik.handleSubmit} className={cx('form-submit', "from")}>
+          <h3 className='text-center text-uppercase font-weight-bold'>Đăng nhập</h3>
+          <span className={cx("err")}>
+            {error}
+          </span>
+          <div className={cx('mt-3')}>
+            <label className="mb-0 mr-2 font-weight-bold d-block">
+              Email
+            </label>
+            <input
+              name="email"
+              className={cx("form-control", "form-input", "mt-2")}
+              placeholder="Email"
+              value={formik.values.email}
+              onChange={formik.handleChange}
+            />
+          </div>
+          <span className={cx("err")}>
+            {formik.errors.email ? formik.errors.email : ""}
+          </span>
+          <div className={cx("mb-2", "mt-4")}>
+            <label className="mb-0 mr-2 font-weight-bold d-block">
+              Mật khẩu
+            </label>
+            <input
+              name="password" type="password"
+              className={cx("form-control", "form-input", "mt-2")}
+              placeholder="Mật khẩu"
+              value={formik.values.password}
+              onChange={formik.handleChange}
+            />
+          </div>
+          <p className={cx("err")}>
+            {formik.errors.password ? formik.errors.password : ""}
+          </p>
+          <button
+            type="submit"
+            className={cx("btn", "text-uppercase", "btn-button", "mb-4", "mt-2", "btn-block")}
+          >
+            Đăng nhập
+          </button>
+          <div className={cx('text-center', 'mb-4')}>
+            <span>Chưa có tài khoản? Đăng ký </span>
+            <Link to={"/register"} className='text-danger text-decoration-none'>tại đây</Link>
+          </div>
+        </form>
+
+      </div>
+
     </div>
   )
 }
 
-export default Login
+export default Login;

@@ -4,15 +4,41 @@
     background-size: cover;
     background-clip: content-box;
     height: 100%;
-    background-image: url("../../../Asset/bglogin.png");
+    background-image: url("../../../Asset/bglogin.png") !important;
 }
-
-.bg-form{
-    background: #fff;
-    opacity: 0.8;
+.form-text {
+    font-weight: bold;
+}
+.form-login {
+    margin-left: 433px !important;
+}
+.from{
+    background-color: #fff;
+    padding: 10px;
     border-radius: 15px;
 }
+.form-input {
+    border-radius: 0 !important;
+    background-color: #f7f7f7;
+    outline: none !important;
+    box-shadow: none !important;
+    width: 100%;
+}
 
-.login-form::placeholder {
-    padding: 0 !important;
+.btn-button {
+    color: #fff !important;
+    font-weight: 600 !important;
+    background-color: #9c4fc2 !important;
+    border-radius: 5px !important;
+    padding: 7px 200px;
+    font-weight: bold;
+}
+
+.err {
+    color: tomato;
+}
+
+.form-submit{
+    margin: 0 auto !important;
+    width: 500px;
 }
