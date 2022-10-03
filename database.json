@@ -55,8 +55,17 @@
       "members": 125000
     }
   ],
-  "course": [
-      
+  "course":[
+    {
+      "id": 1, 
+      "name": "Mô hình Client - Server là gì?",
+      "url": "https://www.youtube.com/embed/zoELAirXMJY?list=PL_-VfJajZj0WSVCw3lKo2lYifzXekkv6M",
+      "courseId": 1,
+      "update": "01/08/2020",
+      "author": "LuanNV",
+      "maintain": "Mô hình Client - Server là mô hình được sử dụng để triển khai các trang web hiện nay. Toàn bộ các trang web mà bạn có thể truy cập đều đang sử dụng mô hình này. Hãy cùng tìm hiểu tổng quan về mô hình Client - Server trước khi bắt đầu vào các khóa học về lập trình web bạn nhé.",
+      "": ""
+    }
   ],
   "cart": [],
   "account": []
