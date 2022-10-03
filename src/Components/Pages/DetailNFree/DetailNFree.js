@@ -1,19 +1,18 @@
 import React from 'react';
 import classNames from 'classnames/bind';
-import style from './dfree.module.css';
+import style from './dnfree.module.css';
 import { BsFillCheckCircleFill, BsFillClockFill } from 'react-icons/bs';
 import { IoPeople } from 'react-icons/io5';
 import { MdLibraryBooks } from 'react-icons/md';
-import css from '~/Asset/css.png'
+import css from '~/Asset/htmlpro.png'
 import anhluan from '~/Asset/gv_nguyen_van_luan.jpg'
 import anhluong from '~/Asset/gv_nguyen_anh_luong.jpg'
 import rika from '~/Asset/rika.png'
 import oe96bk from '~/Asset/96bk.png'
 
-
 let cx = classNames.bind(style);
 
-function DetailFree() {
+function DetailNFree() {
   return (
     <div className={cx("text-detail")}>
       <h3 className={cx('font-weight-bold')}>Lập Trình Web Với HTML5 - CSS3</h3>
@@ -32,8 +31,8 @@ function DetailFree() {
           <div className={cx('col-lg-6', 'p-0', 'learn-detail')}>
             {/* ảnh lấy từ json */}
             <img src={css} alt="" className="img-detail" />
-            <p>Miễn Phí</p>
-            <button>Học Ngay</button>
+            <p>109.000.000 VND</p>
+            <button>Mua Ngay</button>
           </div>
         </div>
       </div>
@@ -201,4 +200,4 @@ function DetailFree() {
   )
 }
 
-export default DetailFree
+export default DetailNFree

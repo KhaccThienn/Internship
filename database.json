@@ -1,22 +1,72 @@
 {
-  "course": [
+  "thumpCourse": [
     {
       "id": 1,
       "img": "https://htmldemo.net/edumall/edumall/assets/images/courses/courses-1.jpg",
       "name": "Khóa Học Kiến Thức Nền Tảng",
       "author": "LuanNV",
-      "content": "Đây là môn cực kỳ quan trọng vì nó giúp ta khái quát tổng quan về ngành cũng như các kiến thức nền về cấu tạo, nguyên lý hoạt động của máy tính, đại số Boolean (cái này mình khoái lắm), cách chuyển đổi các cơ số, RAM là gì, Ổ cứng hoạt động ra sao, CPU gồm những bộ phận nào, ALU, BUS có chức năng gì,... Bên trường mình thì môn này là môn kiến trúc máy tính."
+      "level": "basic"
     },
     {
       "id": 2,
       "img": "https://htmldemo.net/edumall/edumall/assets/images/courses/courses-2.jpg",
       "name": "Khóa Học Responsive Web Design",
       "author": "LuongNA",
-      "content": ""
+      "level": "basic"
+    },
+    {
+      "id": 3,
+      "img": "https://htmldemo.net/edumall/edumall/assets/images/courses/courses-3.jpg",
+      "name": "Khóa Học JavaScript Nâng Cao",
+      "author": "YenNTK",
+      "level": "Advanced"
+    },
+    {
+      "id": 4,
+      "img": "https://htmldemo.net/edumall/edumall/assets/images/courses/courses-4.jpg",
+      "name": "Khóa Học WSL / Ubuntu",
+      "author": "HauNV",
+      "level": "Advanced"
     }
   ],
   "FECourse": [
-    {}
+    {
+      "id": 1,
+      "name": "Kiến Thức Nhập Môn IT",
+      "image":"https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+      "members": 81486
+    },
+    {
+      "id": 2,
+      "name": "HTML5, CSS3 Cơ Bản",
+      "image":"https://files.fullstack.edu.vn/f8-prod/courses/8.png",
+      "members": 100200
+    },
+    {
+      "id": 3,
+      "name": "@Responsive Web Design",
+      "image": "https://files.fullstack.edu.vn/f8-prod/courses/3.png",
+      "members": 60000
+    },
+    {
+      "id": 4,
+      "name": "JavaScript Cơ Bản",
+      "image":"https://files.fullstack.edu.vn/f8-prod/courses/9.png",
+      "members": 125000
+    }
   ],
-  "homePage": []
+  "course":[
+    {
+      "id": 1, 
+      "name": "Mô hình Client - Server là gì?",
+      "url": "https://www.youtube.com/embed/zoELAirXMJY?list=PL_-VfJajZj0WSVCw3lKo2lYifzXekkv6M",
+      "courseId": 1,
+      "update": "01/08/2020",
+      "author": "LuanNV",
+      "maintain": "Mô hình Client - Server là mô hình được sử dụng để triển khai các trang web hiện nay. Toàn bộ các trang web mà bạn có thể truy cập đều đang sử dụng mô hình này. Hãy cùng tìm hiểu tổng quan về mô hình Client - Server trước khi bắt đầu vào các khóa học về lập trình web bạn nhé.",
+      "": ""
+    }
+  ],
+  "cart": [],
+  "account": []
 }

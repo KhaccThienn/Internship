@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.ketqua{
+    text-align: center;
+}
+.card-timkiem{
+    margin-top: 50px;
+    margin-left: 50px;   
+    margin-bottom: 50px;
+    width: 80% !important;
+    border-radius: 15px;
+}
+.card-body a {
+    text-align: center;
+    margin-left: 60px;
+    color: #fff !important;
+}
+.card-timkiem img {
+    height: 150px;
+    border-radius: 15px;
+}
