@@ -1,8 +1,20 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import style from './Login.module.css';
+import * as Yup from 'yup';
+import { useFormik } from 'formik';
+
 
 const cx = classNames.bind(style);
+
+// const initValues = {
+//   name: "",
+//   password: "",
+// }
+
+// const validate =  Yup.object().shape({
+
+// })
 
 function Login() {
   return (
