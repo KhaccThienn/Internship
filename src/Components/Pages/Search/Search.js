@@ -10,7 +10,7 @@ let cx = classNames.bind(style);
 
 
 function Search() {
-  
+
   return (
     <div>
       <h2 className="ketqua">Kết quả tìm kiếm cho : JavaScript</h2>
