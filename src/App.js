@@ -14,6 +14,7 @@ import Upcomming from "./Components/Pages/Upcomming/Upcomming";
 import DetailFree from "./Components/Pages/DetailFree/DetailFree";
 import Cart from "./Components/Pages/Cart/Cart";
 import DetailNFree from "./Components/Pages/DetailNFree/DetailNFree";
+import Search from "./Components/Pages/Search/Search";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/dFree" element={< MasterLayouts children={<DetailFree />} />} />
         <Route path="/dNFree" element={< MasterLayouts children={<DetailNFree />} />} />
         <Route path="/cart" element={< MasterLayouts children={<Cart />} />} />
+        <Route path="/search" element={< MasterLayouts children={<Search />} />} />
       </Routes>
     </>
   );
