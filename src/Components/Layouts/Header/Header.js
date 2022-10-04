@@ -2,14 +2,19 @@ import { Button } from "antd";
 import classNames from "classnames/bind";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 import { GrMenu } from "react-icons/gr";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import logo from "~/Asset/logo.png";
 import "./header.module.css";
 import style from "./header.module.css";
+import { useDispatch } from 'react-redux/es/exports';
+
 
 let cx = classNames.bind(style);
 
 function Header() {
+  const dispatch = useDispatch()
+  const user = useSelector(state => state.UserReducers.user);
   const submitForm = (e) => {
     e.preventDefault();
     console.log(e.target)
@@ -33,7 +38,7 @@ function Header() {
             </div>
           </div>
           <form
-            
+
             className={cx(
               "col-lg-6",
               "position-relative",
@@ -43,7 +48,7 @@ function Header() {
             )}
           >
             <input
-              
+
               className={cx("input-header")}
               placeholder="Tim kiem khoa hoc, bai viet, v.v..."
             />
@@ -57,10 +62,25 @@ function Header() {
                 </Link>
               </div>
               <div className={cx("col-lg-9", "col-4")}>
-                <Button className={cx("bt-header")}>
-                  <Link to="/login" className="text-white text-decoration-none">
-                    Đăng nhập
-                  </Link>
+                <Button className={cx("bt-header", "position-relative")}>
+                  <div className="dropdown">
+                    <button className={cx('btn', 'btn-secondary', 'text-white', 'button-login')} type="button" data-toggle="dropdown" aria-expanded="false">
+                      {
+                        !user.name && (
+                          <Link to="/login" className="text-white text-decoration-none">
+                            Đăng nhập
+                          </Link>
+                        )
+                      }
+                    </button>
+
+                    {
+                      user.name && <div className={cx("dropdown-menu", "login", 'text-center')} id="login"><p>{user.name}</p>
+                        <button className="dropdown-item" onClick={() => dispatch({ type: "REMOVE_USER" })} type="button">Đăng xuất</button></div>
+                    }
+                  </div>
+
+
                 </Button>
               </div>
             </div>

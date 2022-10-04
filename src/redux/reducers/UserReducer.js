@@ -1,5 +1,7 @@
+
+
 const initState = {
-    user: JSON.parse(localStorage.getItem("user"))
+    user: JSON.parse(localStorage.getItem("user") || "[]")
 }
 
 const UserReducers = (state = initState, action) => {
@@ -15,6 +17,10 @@ const UserReducers = (state = initState, action) => {
         case "GET_USER":
             let u = state.user
             return u
+        case "REMOVE_USER":
+            localStorage.removeItem("user")
+            let empty = {}
+            return empty
         default:
             return state;
     }

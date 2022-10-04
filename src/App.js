@@ -17,6 +17,8 @@ import DetailNFree from "./Components/Pages/DetailNFree/DetailNFree";
 import Search from "./Components/Pages/Search/Search";
 
 function App() {
+
+
   return (
     <>
       <Routes>
@@ -29,7 +31,8 @@ function App() {
         <Route path="/test" element={< MasterLayouts children={<Test />} />} />
         <Route path="/upcomming" element={< MasterLayouts children={<Upcomming />} />} />
         <Route path="/frontend" element={< MasterLayouts children={<FrontEnd />} />} />
-        <Route path="/login" element={< MasterLayouts children={<Login />} />} />
+        <Route path="/login" element={< MasterLayouts  children={<Login  />} />} />
+        <Route path="/register" element={< MasterLayouts children={<Register />} />} />
         <Route path="/dFree/:id" element={< MasterLayouts children={<DetailFree />} />} />
         <Route path="/dNFree" element={< MasterLayouts children={<DetailNFree />} />} />
         <Route path="/cart" element={< MasterLayouts children={<Cart />} />} />
