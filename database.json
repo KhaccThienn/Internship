@@ -34,25 +34,42 @@
       "id": 1,
       "name": "Kiến Thức Nhập Môn IT",
       "image":"https://files.fullstack.edu.vn/f8-prod/courses/7.png",
-      "members": 81486
+      "members": 81486,
+      "subtitle": "Để có cái nhìn tổng quan về ngành IT - Lập trình web"
     },
     {
       "id": 2,
       "name": "HTML5, CSS3 Cơ Bản",
       "image":"https://files.fullstack.edu.vn/f8-prod/courses/8.png",
-      "members": 100200
+      "members": 100200,
+      "subtitle": "Học Xây Dựng Web Bằng HTML - CSS"
     },
     {
       "id": 3,
       "name": "@Responsive Web Design",
       "image": "https://files.fullstack.edu.vn/f8-prod/courses/3.png",
-      "members": 60000
+      "members": 60000,
+      "subtitle": "Học Xây Dựng Web Đáp Ứng Tương Tự Với Bootstrap"
     },
     {
       "id": 4,
       "name": "JavaScript Cơ Bản",
       "image":"https://files.fullstack.edu.vn/f8-prod/courses/9.png",
-      "members": 125000
+      "members": 125000,
+      "subtitle": "Học Thao Tác Với Các Phần Tử DOM Của HTML"
+    }, 
+    {
+      "id": 5,
+      "name": "Xây Dựng Website với ReactJS",
+      "image": "https://files.fullstack.edu.vn/f8-prod/courses/11.png",
+      "members": 1456777,
+      "subtitle": "Khóa học ReactJS từ cơ bản tới nâng cao, kết quả của khóa học này là bạn có thể làm hầu hết các dự án thường gặp với ReactJS."
+    },
+    {
+      "id": 6,
+      "name": "JavaSCript Pro",
+      "image":"https://files.fullstack.edu.vn/f8-prod/courses/12.png",
+      "members": 12
     }
   ],
   "course":[
@@ -63,10 +80,34 @@
       "courseId": 1,
       "update": "01/08/2020",
       "author": "LuanNV",
-      "maintain": "Mô hình Client - Server là mô hình được sử dụng để triển khai các trang web hiện nay. Toàn bộ các trang web mà bạn có thể truy cập đều đang sử dụng mô hình này. Hãy cùng tìm hiểu tổng quan về mô hình Client - Server trước khi bắt đầu vào các khóa học về lập trình web bạn nhé.",
-      "": ""
+      "maintain": "Mô hình Client - Server là mô hình được sử dụng để triển khai các trang web hiện nay. Toàn bộ các trang web mà bạn có thể truy cập đều đang sử dụng mô hình này. Hãy cùng tìm hiểu tổng quan về mô hình Client - Server trước khi bắt đầu vào các khóa học về lập trình web bạn nhé."
+    },
+    {
+      "id":2,
+      "name": "Domain là gì? Bạn đã thật sự hiểu về domain?",
+      "url": "https://www.youtube.com/embed/M62l1xA5Eu8?list=PL_-VfJajZj0WSVCw3lKo2lYifzXekkv6M",
+      "courseId": 1,
+      "update": "01/08/2020",
+      "author": "F9",
+      "maintain": "Domain hay còn gọi là Tên miền, đây là kiến thức các bạn có thể bắt đầu tìm hiểu trước khi đi vào các bài học chuyên sâu (phải làm quen với code)."
+    }, 
+    {
+      "id": 3,
+      "name": "Sinh viên IT đi thực tập cần biết những gì? | Đi thực tập cần chuẩn bị những gì? | Thực tập IT",
+      "url": "https://www.youtube.com/embed/YH-E4Y3EaT4?list=PL_-VfJajZj0WSVCw3lKo2lYifzXekkv6M",
+      "courseId": 1,
+      "update": "04/12/2020",
+      "author": "LuanNV",
+      "maintain": "Mình làm Vlog này với mong muốn giúp các bạn học IT, sắp đi thực tập IT có thể biết môi trường làm việc thực tế của các công ty IT - Phần mềm diễn ra như thế nào. Hi vọng content này sẽ giúp các bạn sinh viên IT đi thực tập biết bản thân phải làm gì, biết ngành IT đi thực tập có khó không và đi thực tập cần chuẩn bị những gì để chuẩn bị thật tốt cho kì đi thực tập của mình nhé."
+    },
+    {
+      "id":4, 
+      "name": ""
     }
   ],
   "cart": [],
-  "account": []
+  "account": [],
+  "user":[
+    
+  ]
 }

@@ -1,21 +1,24 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import style from "./learn.module.css"
+import style from "./learn.module.css";
 import classNames from "classnames/bind";
 import hau from "~/Asset/hau_ngo.jpg";
+import luannv from "~/Asset/gv_nguyen_van_luan.jpg";
 
-
-const cx = classNames.bind(style)
+const cx = classNames.bind(style);
 
 function Learn() {
   const [urlCourse, setUrlCourse] = useState({});
 
   useEffect(() => {
-    axios.get("http://localhost:9999/course").then((res) => {
-      console.log(urlCourse)
-    }).catch((err) => {
-      console.log(err);
-    })
+    axios
+      .get("http://localhost:9999/course")
+      .then((res) => {
+        console.log(urlCourse);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
 
   return (
@@ -154,7 +157,7 @@ function Learn() {
                   <div className={cx("user", "ml-5", "mt-3")}>
                     <div className={cx("avt")}>
                       <img
-                        src="Data/image/gv_nguyen_van_luan.jpg"
+                        src={luannv}
                         className="card-img"
                         alt=""
                       />
@@ -185,7 +188,7 @@ function Learn() {
                   <div className={cx("user", "ml-5", "mt-3")}>
                     <div className={cx("avt")}>
                       <img
-                        src="Data/image/gv_nguyen_van_luan.jpg"
+                        src={luannv}
                         className="card-img"
                         alt=""
                       />
@@ -216,7 +219,7 @@ function Learn() {
                   <div className={cx("user", "ml-5", "mt-3")}>
                     <div className={cx("avt")}>
                       <img
-                        src="Data/image/gv_nguyen_van_luan.jpg"
+                        src={luannv}
                         className="card-img"
                         alt=""
                       />
@@ -232,7 +235,6 @@ function Learn() {
                     </div>
                   </div>
                 </div>
-                
               </div>
             </div>
           </div>

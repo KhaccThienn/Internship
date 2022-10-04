@@ -24,12 +24,12 @@ function FeCourse() {
         <div className="container-fluid">
           <div className="row">
             {courses.map((i) => {
-              return (
+              return i.id < 5 ? (
                 <div
                   className="col-lg-3 col-md-4 col-sm-12 cursor-pointer"
                   key={i.id}
                 >
-                  <Link to="" className="text-decoration-none">
+                  <Link to={`/dFree/${i.id}`} className="text-decoration-none">
                     <img src={i.image} alt="" className="card-img" />
                     <p
                       className={cx(
@@ -47,6 +47,8 @@ function FeCourse() {
                     </div>
                   </Link>
                 </div>
+              ) : (
+                <div></div>
               );
             })}
           </div>
