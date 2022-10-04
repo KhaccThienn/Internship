@@ -33,14 +33,14 @@
     {
       "id": 1,
       "name": "Kiến Thức Nhập Môn IT",
-      "image":"https://files.fullstack.edu.vn/f8-prod/courses/7.png",
+      "image": "https://files.fullstack.edu.vn/f8-prod/courses/7.png",
       "members": 81486,
       "subtitle": "Để có cái nhìn tổng quan về ngành IT - Lập trình web"
     },
     {
       "id": 2,
       "name": "HTML5, CSS3 Cơ Bản",
-      "image":"https://files.fullstack.edu.vn/f8-prod/courses/8.png",
+      "image": "https://files.fullstack.edu.vn/f8-prod/courses/8.png",
       "members": 100200,
       "subtitle": "Học Xây Dựng Web Bằng HTML - CSS"
     },
@@ -54,10 +54,10 @@
     {
       "id": 4,
       "name": "JavaScript Cơ Bản",
-      "image":"https://files.fullstack.edu.vn/f8-prod/courses/9.png",
+      "image": "https://files.fullstack.edu.vn/f8-prod/courses/9.png",
       "members": 125000,
       "subtitle": "Học Thao Tác Với Các Phần Tử DOM Của HTML"
-    }, 
+    },
     {
       "id": 5,
       "name": "Xây Dựng Website với ReactJS",
@@ -68,13 +68,13 @@
     {
       "id": 6,
       "name": "JavaSCript Pro",
-      "image":"https://files.fullstack.edu.vn/f8-prod/courses/12.png",
+      "image": "https://files.fullstack.edu.vn/f8-prod/courses/12.png",
       "members": 12
     }
   ],
-  "course":[
+  "course": [
     {
-      "id": 1, 
+      "id": 1,
       "name": "Mô hình Client - Server là gì?",
       "url": "https://www.youtube.com/embed/zoELAirXMJY?list=PL_-VfJajZj0WSVCw3lKo2lYifzXekkv6M",
       "courseId": 1,
@@ -83,14 +83,14 @@
       "maintain": "Mô hình Client - Server là mô hình được sử dụng để triển khai các trang web hiện nay. Toàn bộ các trang web mà bạn có thể truy cập đều đang sử dụng mô hình này. Hãy cùng tìm hiểu tổng quan về mô hình Client - Server trước khi bắt đầu vào các khóa học về lập trình web bạn nhé."
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Domain là gì? Bạn đã thật sự hiểu về domain?",
       "url": "https://www.youtube.com/embed/M62l1xA5Eu8?list=PL_-VfJajZj0WSVCw3lKo2lYifzXekkv6M",
       "courseId": 1,
       "update": "01/08/2020",
       "author": "F9",
       "maintain": "Domain hay còn gọi là Tên miền, đây là kiến thức các bạn có thể bắt đầu tìm hiểu trước khi đi vào các bài học chuyên sâu (phải làm quen với code)."
-    }, 
+    },
     {
       "id": 3,
       "name": "Sinh viên IT đi thực tập cần biết những gì? | Đi thực tập cần chuẩn bị những gì? | Thực tập IT",
@@ -101,7 +101,7 @@
       "maintain": "Mình làm Vlog này với mong muốn giúp các bạn học IT, sắp đi thực tập IT có thể biết môi trường làm việc thực tế của các công ty IT - Phần mềm diễn ra như thế nào. Hi vọng content này sẽ giúp các bạn sinh viên IT đi thực tập biết bản thân phải làm gì, biết ngành IT đi thực tập có khó không và đi thực tập cần chuẩn bị những gì để chuẩn bị thật tốt cho kì đi thực tập của mình nhé."
     },
     {
-      "id":4, 
+      "id": 4,
       "name": "Nhận được gì sau khóa học? | Học lập trình web cơ bản | Tự học lập trình online",
       "url": "https://www.youtube.com/embed/R6plN3FvzFY?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
       "courseId": 2,
@@ -109,7 +109,7 @@
       "maintain": "Xin chào các bạn, đây là video đầu tiên trong chuỗi bài học lập trình web cơ bản dành cho người mới bắt đầu. Mình làm video miễn phí với mong muốn lan tỏa được kiến thức và đam mê học lập trình tới mọi người."
     },
     {
-      "id": 5, 
+      "id": 5,
       "name": "HTML, CSS là gì?",
       "url": "https://www.youtube.com/embed/zwsPND378OQ?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
       "courseId": 2,
@@ -219,15 +219,15 @@
       "courseId": 2,
       "author": "LuongNA",
       "maintain": "Trong bài học này, chúng ta sẽ tìm hiểu về thuộc tính Position: Relative"
-    }, 
+    },
     {
       "id": 19,
       "name": "CSS Position: Absolute",
       "url": "https://www.youtube.com/embed/Y8tX8CzWsyA?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
       "courseId": 2,
-      "author":"LuongNA",
+      "author": "LuongNA",
       "maintain": "Trong bài học này, chúng ta sẽ tìm hiểu về thuộc tính Position: Absolute"
-    }, 
+    },
     {
       "id": 20,
       "name": "Giới thiệu Flexbox",
@@ -235,7 +235,7 @@
       "courseId": 2,
       "author": "LuongNA",
       "maintain": "Trong bài học này, chúng ta sẽ tìm hiểu về Flexbox - 1 khái niệm quan trọng"
-    }, 
+    },
     {
       "id": 21,
       "name": "Học Flexbox qua ví dụ",
@@ -243,6 +243,127 @@
       "courseId": 2,
       "author": "LuongNA",
       "maintain": "Chúng ta sẽ tìm hiểu về Flexbox qua những ví dụ trực quan, đơn giản"
+    },
+    
+    {
+      "id": 22,
+      "name": "Responsive là gì? | Học lập trình web online | Tự học lập trình cơ bản",
+      "url": "https://www.youtube.com/embed/uz5LIP85J5Y?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Responsive"
+    },
+    {
+      "id": 23,
+      "name": "Khái niệm Viewport",
+      "url": "https://www.youtube.com/embed/XJiq_d0vGCQ?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Viewport"
+    },
+    {
+      "id": 24,
+      "name": "Media query (@media)",
+      "url": "https://www.youtube.com/embed/YgkzJkmDP3U?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Media query"
+    },
+    {
+      "id": 25,
+      "name": "Khái niệm Breakpoints?",
+      "url": "https://www.youtube.com/embed/0i37IU0wjlI?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Breakpoints"
+    },
+    {
+      "id": 26,
+      "name": "Media queries: Px, rem hay em?",
+      "url": "https://www.youtube.com/embed/aywAr27pkWE?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Media queries: Px, rem hay em?"
+    },
+    {
+      "id": 27,
+      "name": "Học responsive qua ví dụ",
+      "url": "https://www.youtube.com/embed/-NK4jLekauw?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta học responsive qua ví dụ "
+    },
+    {
+      "id": 28,
+      "name": "Responsive Navbar không dùng JS",
+      "url": "https://www.youtube.com/embed/HYy4c6lcOlM?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Responsive Navbar không dùng JS"
+    },
+    {
+      "id": 29,
+      "name": "Hệ thống lưới (Grid system)",
+      "url": "https://www.youtube.com/embed/lvD5K50TZPk?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Hệ thống lưới (Grid system)"
+    },
+    {
+      "id": 30,
+      "name": "Grid system - Phần 2",
+      "url": "https://www.youtube.com/embed/iKlMB01w47g?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Grid system - Phần 2"
+    },
+    {
+      "id": 31,
+      "name": "Tạo thư viện?",
+      "url": "https://www.youtube.com/embed/ScZaj1eG7DQ?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về cách tạo thư viện?"
+    },
+    {
+      "id": 32,
+      "name": "Tạo đối tượng Grid",
+      "url": "https://www.youtube.com/embed/SZXvXXb_7aA?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về tạo đối tượng Grid"
+    },
+    {
+      "id": 33,
+      "name": "Tạo đối tượng Row",
+      "url": "https://www.youtube.com/embed/9RHKgjuoIPQ?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về cách tạo đối tượng Row"
+    },
+    {
+      "id": 34,
+      "name": "Tạo đối tượng Column",
+      "url": "https://www.youtube.com/embed/Ck-CnLU7HZI?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về cách tạo đối tượng Column"
+    },
+    {
+      "id": 35,
+      "name": "Column offset",
+      "url": "https://www.youtube.com/embed/P4LW5HjrOQs?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Column offset"
+    },
+    {
+      "id": 36,
+      "name": "No gutters",
+      "url": "https://www.youtube.com/embed/u06X297OuFc?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về No gutters"
     },
     {
       "id": 37,
@@ -261,7 +382,5 @@
   ],
   "cart": [],
   "account": [],
-  "user":[
-    
-  ]
+  "user": []
 }
