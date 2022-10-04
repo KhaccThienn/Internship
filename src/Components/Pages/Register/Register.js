@@ -11,16 +11,16 @@ const cx = classNames.bind(style);
 
 const initialValues = {
     name: "",
-    phone: "",
     email: "",
-    password: ""
+    password: "",
+    confirm: ""
 }
 
 const validationSchema = Yup.object().shape({
     name: Yup.string().required("Vui lòng nhập Họ tên"),
-    phone: Yup.string().required("Vui lòng nhập số điện thoại"),
     email: Yup.string().required("Vui lòng nhập email").email("Email không đúng định dạng"),
-    password: Yup.string().required("Vui lòng nhập mật khẩu").min(6, "Mật khẩu tối thiếu 6 ký tự")
+    password: Yup.string().required("Vui lòng nhập mật khẩu").min(6, "Mật khẩu tối thiếu 6 ký tự"),
+    confirm: Yup.string().required("Vui lòng nhập lại mật khẩu").min(6, "Mật khẩu tối thiếu 6 ký tự")
 })
 
 function Register() {
@@ -55,22 +55,6 @@ function Register() {
                         {formik.errors.name ? formik.errors.name : ""}
                     </span>
 
-
-                    <div className={cx("mt-3")}>
-                        <label className="mb-0 mr-2 font-weight-bold">
-                            Số điện thoại
-                        </label>
-                        <input placeholder='Số điện thoại'
-                            className={cx("form-control", "form-input", "mt-2")}
-                            onChange={formik.handleChange}
-                            value={formik.values.phone}
-                            name="phone"
-                        />
-                    </div>
-                    <span className={cx("err")}>
-                        {formik.errors.phone ? formik.errors.phone : ""}
-                    </span>
-
                     <div className={cx('mt-3')}>
                         <label className="mb-0 mr-2 font-weight-bold d-block">
                             Email
@@ -99,6 +83,21 @@ function Register() {
                     </div>
                     <p className={cx("err")}>
                         {formik.errors.password ? formik.errors.password : ""}
+                    </p>
+
+                    <div className={cx("mb-2", "mt-4")}>
+                        <label className="mb-0 mr-2 font-weight-bold d-block">
+                            Nhập lại mật khẩu
+                        </label>
+                        <input
+                            name="confirm" type="password"
+                            className={cx("form-control", "form-input", "mt-2")}
+                            onChange={formik.handleChange} placeholder="Nhập lại mật khẩu"
+                            value={formik.values.confirm}
+                        />
+                    </div>
+                    <p className={cx("err")}>
+                        {formik.errors.confirm ? formik.errors.confirm : ""}
                     </p>
                     <button
                         type="submit"

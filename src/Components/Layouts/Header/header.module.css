@@ -204,15 +204,25 @@
         padding-left: 40px;
     }
 
-    .bt-header {
+    /* .bt-header {
         border-radius: 10px !important;
         background-color: #F05123 !important;
         color: white !important;
         width: 150px;
         height: 35px;
         border: 0px;
+        position: relative;
+    } */
+    .button-login{
+        background-color: #F05123 !important;
+        outline: none !important;
     }
-
+    .login{
+        z-index: 1024;
+        position: absolute !important;
+        top: -100% !important;
+        left: -20% !important;
+    }
     .cart-icon {
         font-size: 30px;
         color: orange;
