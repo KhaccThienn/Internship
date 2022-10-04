@@ -205,12 +205,124 @@
       "maintain": "Chúng ta sẽ tìm hiểu về thuộc tính Border ( đường viền ) trong CSS"
     },
     {
-      "id": 17,
-      "name": "",
-      "url": "",
-      "courseId": 2,
+      "id": 22,
+      "name": "Responsive là gì? | Học lập trình web online | Tự học lập trình cơ bản",
+      "url": "https://www.youtube.com/embed/uz5LIP85J5Y?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
       "author": "LuongNA",
-      "maintain": ""
+      "maintain": "Chúng ta sẽ tìm hiểu về Responsive"
+    },
+    {
+      "id": 23,
+      "name": "Khái niệm Viewport",
+      "url": "https://www.youtube.com/embed/XJiq_d0vGCQ?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Viewport"
+    },
+    {
+      "id": 24,
+      "name": "Media query (@media)",
+      "url": "https://www.youtube.com/embed/YgkzJkmDP3U?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Media query"
+    },
+    {
+      "id": 25,
+      "name": "Khái niệm Breakpoints?",
+      "url": "https://www.youtube.com/embed/0i37IU0wjlI?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Breakpoints"
+    },
+    {
+      "id": 26,
+      "name": "Media queries: Px, rem hay em?",
+      "url": "https://www.youtube.com/embed/aywAr27pkWE?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Media queries: Px, rem hay em?"
+    },
+    {
+      "id": 27,
+      "name": "Học responsive qua ví dụ",
+      "url": "https://www.youtube.com/embed/-NK4jLekauw?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta học responsive qua ví dụ "
+    },
+    {
+      "id": 28,
+      "name": "Responsive Navbar không dùng JS",
+      "url": "https://www.youtube.com/embed/HYy4c6lcOlM?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Responsive Navbar không dùng JS"
+    },
+    {
+      "id": 29,
+      "name": "Hệ thống lưới (Grid system)",
+      "url": "https://www.youtube.com/embed/lvD5K50TZPk?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Hệ thống lưới (Grid system)"
+    },
+    {
+      "id": 30,
+      "name": "Grid system - Phần 2",
+      "url": "https://www.youtube.com/embed/iKlMB01w47g?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Grid system - Phần 2"
+    },
+    {
+      "id": 31,
+      "name": "Tạo thư viện?",
+      "url": "https://www.youtube.com/embed/ScZaj1eG7DQ?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về cách tạo thư viện?"
+    },
+    {
+      "id": 32,
+      "name": "Tạo đối tượng Grid",
+      "url": "https://www.youtube.com/embed/SZXvXXb_7aA?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về tạo đối tượng Grid"
+    },
+    {
+      "id": 33,
+      "name": "Tạo đối tượng Row",
+      "url": "https://www.youtube.com/embed/9RHKgjuoIPQ?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về cách tạo đối tượng Row"
+    },
+    {
+      "id": 34,
+      "name": "Tạo đối tượng Column",
+      "url": "https://www.youtube.com/embed/Ck-CnLU7HZI?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về cách tạo đối tượng Column"
+    },
+    {
+      "id": 35,
+      "name": "Column offset",
+      "url": "https://www.youtube.com/embed/P4LW5HjrOQs?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Column offset"
+    },
+    {
+      "id": 36,
+      "name": "No gutters",
+      "url": "https://www.youtube.com/embed/u06X297OuFc?list=PL_-VfJajZj0VkWYODGeMuraS8V7xaOZM8",
+      "courseId": 3,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về No gutters"
     }
   ],
   "cart": [],
