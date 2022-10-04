@@ -106,5 +106,8 @@
     }
   ],
   "cart": [],
-  "account": []
+  "account": [],
+  "user":[
+    
+  ]
 }
