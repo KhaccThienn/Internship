@@ -10,6 +10,11 @@ import style from "./header.module.css";
 let cx = classNames.bind(style);
 
 function Header() {
+  const submitForm = (e) => {
+    e.preventDefault();
+    console.log(e.target)
+  }
+
   return (
     <div>
       {/* laptop */}
@@ -25,7 +30,8 @@ function Header() {
               </div>
             </div>
           </div>
-          <div
+          <form
+            
             className={cx(
               "col-lg-6",
               "position-relative",
@@ -35,11 +41,12 @@ function Header() {
             )}
           >
             <input
+              
               className={cx("input-header")}
               placeholder="Tim kiem khoa hoc, bai viet, v.v..."
             />
             <AiOutlineSearch className={cx("icon-search")} />
-          </div>
+          </form>
           <div className={cx("col-lg-2", "header-log", "col-md-3", "col-4")}>
             <div className="row">
               <div className={cx("col-lg-3", "cart-icon")}>

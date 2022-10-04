@@ -1,19 +1,29 @@
-import React from 'react';
+import axios from 'axios';
 import classNames from 'classnames/bind';
-import style from './dfree.module.css';
+import React, { useEffect, useState } from 'react';
 import { BsFillCheckCircleFill, BsFillClockFill } from 'react-icons/bs';
 import { IoPeople } from 'react-icons/io5';
 import { MdLibraryBooks } from 'react-icons/md';
-import css from '~/Asset/css.png'
-import anhluan from '~/Asset/gv_nguyen_van_luan.jpg'
-import anhluong from '~/Asset/gv_nguyen_anh_luong.jpg'
-import rika from '~/Asset/rika.png'
-import oe96bk from '~/Asset/96bk.png'
+import { useParams } from 'react-router-dom';
+import oe96bk from '~/Asset/96bk.png';
+import css from '~/Asset/css.png';
+import anhluong from '~/Asset/gv_nguyen_anh_luong.jpg';
+import anhluan from '~/Asset/gv_nguyen_van_luan.jpg';
+import rika from '~/Asset/rika.png';
+import style from './dfree.module.css';
 
 
 let cx = classNames.bind(style);
 
 function DetailFree() {
+
+  const [dCourse, setDCourse] = useState({})
+  const { id } = useParams()
+
+  useEffect(() => {
+    axios.get("")
+  },[])
+
   return (
     <div className={cx("text-detail")}>
       <h3 className={cx('font-weight-bold')}>Lập Trình Web Với HTML5 - CSS3</h3>

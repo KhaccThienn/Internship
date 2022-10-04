@@ -4,6 +4,7 @@ import style from "./Road.module.css";
 import be from "~/Asset/be.png"
 import fe from "~/Asset/fe.png"
 import grcard from "~/Asset/fb-group-card.png";
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(style);
 
@@ -38,12 +39,9 @@ function Road() {
                   websites. Trong phần này F8 sẽ chia sẻ cho bạn lộ trình để trở
                   thành lập trình viên Front-end nhé.
                 </p>
-                <button
-                  className={cx("btn", "btn-checkout")}
-                  onclick="toDetail()"
-                >
+                <Link to="/frontend" className={cx("btn", "btn-checkout")}>
                   Xem Chi Tiết
-                </button>
+                </Link>
               </div>
               <div className="col-lg-4 ">
                 <div className={cx("LearningPathItem_thumb-wrap")}>
@@ -76,12 +74,12 @@ function Road() {
                   việc với dữ liệu, công việc thường nặng tính logic hơn. Chúng
                   ta sẽ tìm hiểu thêm về lộ trình học Back-end nhé.
                 </p>
-                <button
+                <Link to="/upcomming"
                   className={cx("btn", "btn-checkout")}
                   onclick="navigateTo()"
                 >
                   Xem Chi Tiết
-                </button>
+                </Link>
               </div>
               <div className="col-lg-4">
                 <div className={cx("LearningPathItem_thumb-wrap")}>

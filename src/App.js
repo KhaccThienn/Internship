@@ -29,7 +29,7 @@ function App() {
         <Route path="/upcomming" element={< MasterLayouts children={<Upcomming />} />} />
         <Route path="/frontend" element={< MasterLayouts children={<FrontEnd />} />} />
         <Route path="/login" element={< MasterLayouts children={<Login />} />} />
-        <Route path="/dFree" element={< MasterLayouts children={<DetailFree />} />} />
+        <Route path="/dFree/:id" element={< MasterLayouts children={<DetailFree />} />} />
         <Route path="/dNFree" element={< MasterLayouts children={<DetailNFree />} />} />
         <Route path="/cart" element={< MasterLayouts children={<Cart />} />} />
       </Routes>
