@@ -16,6 +16,7 @@
     background-color: #fff;
     padding: 10px;
     border-radius: 15px;
+    margin-top: 30px;
 }
 .form-input {
     border-radius: 0 !important;
@@ -41,4 +42,5 @@
 .form-submit{
     margin: 0 auto !important;
     width: 500px;
+    
 }
