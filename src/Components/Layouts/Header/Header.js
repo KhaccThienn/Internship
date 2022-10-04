@@ -23,7 +23,9 @@ function Header() {
           <div className={cx("col-lg-4", "col-md-2", "col-2")}>
             <div className="row">
               <div className={cx("col-lg-2", "logo-header")}>
-                <img src={logo} alt="..." />
+
+                <img href="/" src={logo} alt="..." />
+
               </div>
               <div className={cx("font-logo", "col-lg-10")}>
                 <Link to="/">Làm Trước - Học Sau</Link>
@@ -55,7 +57,11 @@ function Header() {
                 </Link>
               </div>
               <div className={cx("col-lg-9", "col-4")}>
-                <Button className={cx("bt-header")}>Đăng Nhập</Button>
+                <Button className={cx("bt-header")}>
+                  <Link to="/login" className="text-white text-decoration-none">
+                    Đăng nhập
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>
@@ -72,7 +78,9 @@ function Header() {
           <div className={cx("col-1")}></div>
           <div className={cx("col-4")}>
             <Button type="danger" className={cx("bt-header")}>
-              Đăng Nhập
+              <Link to="/login" className="text-white text-decoration-none">
+                Đăng nhập
+              </Link>
             </Button>
           </div>
         </div>
@@ -93,7 +101,9 @@ function Header() {
           </div>
           <div className={cx("col-md-3", "icon-log")}>
             <Button type="danger" className={cx("bt-header")}>
-              Đăng Nhập
+              <Link to="/login" className="text-white text-decoration-none">
+                Đăng nhập
+              </Link>
             </Button>
           </div>
         </div>
