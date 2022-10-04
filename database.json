@@ -206,11 +206,57 @@
     },
     {
       "id": 17,
-      "name": "",
-      "url": "",
+      "name": "CSS Box-Sizing",
+      "url": "https://www.youtube.com/embed/bv16wjxgV4U?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
       "courseId": 2,
       "author": "LuongNA",
-      "maintain": ""
+      "maintain": "Chúng ta sẽ tìm hiểu về thuộc tính Box-Sizing trong CSS"
+    },
+    {
+      "id": 18,
+      "name": "CSS Position: Relative",
+      "url": "https://www.youtube.com/embed/h1No10BHI5Y?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Trong bài học này, chúng ta sẽ tìm hiểu về thuộc tính Position: Relative"
+    }, 
+    {
+      "id": 19,
+      "name": "CSS Position: Absolute",
+      "url": "https://www.youtube.com/embed/Y8tX8CzWsyA?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author":"LuongNA",
+      "maintain": "Trong bài học này, chúng ta sẽ tìm hiểu về thuộc tính Position: Absolute"
+    }, 
+    {
+      "id": 20,
+      "name": "Giới thiệu Flexbox",
+      "url": "https://www.youtube.com/embed/bVUN6nS82k8?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Trong bài học này, chúng ta sẽ tìm hiểu về Flexbox - 1 khái niệm quan trọng"
+    }, 
+    {
+      "id": 21,
+      "name": "Học Flexbox qua ví dụ",
+      "url": "https://www.youtube.com/embed/G19jZzK5FWI?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Flexbox qua những ví dụ trực quan, đơn giản"
+    },
+    {
+      "id": 37,
+      "name": "Sử dụng JS trong file HTML",
+      "url": "https://www.youtube.com/embed/W0vEUmyvthQ?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
+      "courseId": 4,
+      "author": "LuanNV",
+      "maintain": "Chúng ta sẽ tìm hiểu cách sử dụng JS trong file HTML"
+    },
+    {
+      "id": 38,
+      "name": "Khai Báo Biến",
+      "url": "https://www.youtube.com/embed/CLbx37dqYEI?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
+      "courseId": 4
     }
   ],
   "cart": [],
