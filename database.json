@@ -102,7 +102,115 @@
     },
     {
       "id":4, 
-      "name": ""
+      "name": "Nhận được gì sau khóa học? | Học lập trình web cơ bản | Tự học lập trình online",
+      "url": "https://www.youtube.com/embed/R6plN3FvzFY?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Xin chào các bạn, đây là video đầu tiên trong chuỗi bài học lập trình web cơ bản dành cho người mới bắt đầu. Mình làm video miễn phí với mong muốn lan tỏa được kiến thức và đam mê học lập trình tới mọi người."
+    },
+    {
+      "id": 5, 
+      "name": "HTML, CSS là gì?",
+      "url": "https://www.youtube.com/embed/zwsPND378OQ?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Giới Thiệu Về Khóa Học, Ngôn Ngữ Đánh Dấu Siêu Văn Bản HTML5"
+    },
+    {
+      "id": 6,
+      "name": "Cài đặt môi trường",
+      "url": "https://www.youtube.com/embed/ZotVkQDC6mU?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ cùng nhau cài đặt môi trường code"
+    },
+    {
+      "id": 7,
+      "name": "Cấu Trúc File HTML",
+      "url": "https://www.youtube.com/embed/LYnrFSGLCl8?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ cùng nhau học về cấu trúc file HTML"
+    },
+    {
+      "id": 8,
+      "name": "Thẻ HTML thông dụng",
+      "url": "https://www.youtube.com/embed/AzmdwZ6e_aM?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về các thẻ HTML thông dụng"
+    },
+    {
+      "id": 9,
+      "name": "Attribute trong HTML",
+      "url": "https://www.youtube.com/embed/UYpIh5pIkSA?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về các thuộc tính của thẻ trong HTML"
+    },
+    {
+      "id": 10,
+      "name": "Sử dụng CSS trong HTML",
+      "url": "https://www.youtube.com/embed/NsSsJTg29oE?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ học cách sử dụng CSS trong HTML"
+    },
+    {
+      "id": 11,
+      "name": "ID and Class",
+      "url": "https://www.youtube.com/embed/4J6d8cr0X48?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuanNV",
+      "maintain": "Trong lần này, chúng ta sẽ tìm hiểu về 2 định nghĩa: ID và Class"
+    },
+    {
+      "id": 12,
+      "name": "Đặt biến trong CSS",
+      "url": "https://www.youtube.com/embed/x9fnxVTkpP4?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về các quy tắc đặt tên biến trong CSS"
+    },
+    {
+      "id": 13,
+      "name": "Đơn vị trong CSS",
+      "url": "https://www.youtube.com/embed/pcUiTt6eBk0?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về các đơn vị đo lường trong CSS"
+    },
+    {
+      "id": 14,
+      "name": "CSS Padding",
+      "url": "https://www.youtube.com/embed/aj-lD4XXr8A?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về thuộc tính Padding trong CSS"
+    },
+    {
+      "id": 15,
+      "name": "CSS Margin",
+      "url": "https://www.youtube.com/embed/8X48l0CK5_4?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về thuộc tính Margin trong CSS"
+    },
+    {
+      "id": 16,
+      "name": "CSS Border",
+      "url": "https://www.youtube.com/embed/VbzOimNAOxE?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về thuộc tính Border ( đường viền ) trong CSS"
+    },
+    {
+      "id": 17,
+      "name": "",
+      "url": "",
+      "courseId": 2,
+      "author": "LuongNA",
+      "maintain": ""
     }
   ],
   "cart": [],
