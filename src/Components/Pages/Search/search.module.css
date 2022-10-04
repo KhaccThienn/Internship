@@ -15,10 +15,13 @@
 }
 .card-body a {
     text-align: center;
-    margin-left: 60px;
+    margin-left: 50px;
     color: #fff !important;
 }
 .card-timkiem img {
     height: 150px;
     border-radius: 15px;
+}
+.bt-card {
+    text-align: center;
 }

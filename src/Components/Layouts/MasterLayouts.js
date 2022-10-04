@@ -19,7 +19,7 @@ function MasterLayouts({children}) {
           <div className={cx('col-lg-1', "side", "p-0")}>
             <Sidebar />
           </div>
-          <div className={cx('col-lg-11', "p-3")}>
+          <div className={cx('col-lg-11', "p-0")}>
             {children}
           </div>
         </div>

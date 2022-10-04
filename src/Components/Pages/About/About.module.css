@@ -5,5 +5,8 @@
     font-family: 'Times New Roman', Times, serif;
 }
 .about-img{
-    border-radius: 50%;
+    border-radius: 50% !important;
+}
+.img-team{
+    overflow: hidden;
 }
