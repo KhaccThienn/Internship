@@ -27,16 +27,10 @@ function PopularCourse() {
               <div className="col-lg-3 col-md-6 col-sm-12" key={index}>
                 <img src={items.img} alt="" className="card-img" />
                 <p className={cx("home-level", "mt-2")}>{items.level}</p>
-                <p className={cx("text-center", "font-weight-bold", "home-text", "text-truncate")}>
+                <p className={cx("text-left", "font-weight-bold", "home-text", "text-truncate")}>
                   {items.name}
                 </p>
                 <p>By: { items.author }</p>
-                <Link
-                  to=""
-                  className="btn btn-outline-dark text-center home-btn"
-                >
-                  Học Ngay!
-                </Link>
               </div>
             );
           })}
