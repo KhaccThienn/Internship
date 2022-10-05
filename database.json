@@ -244,7 +244,6 @@
       "author": "LuongNA",
       "maintain": "Chúng ta sẽ tìm hiểu về Flexbox qua những ví dụ trực quan, đơn giản"
     },
-
     {
       "id": 22,
       "name": "Responsive là gì? | Học lập trình web online | Tự học lập trình cơ bản",
@@ -560,5 +559,13 @@
   ],
   "cart": [],
   "account": [],
-  "user": []
+  "user": [
+    {
+      "name": "dadd",
+      "email": "asacb@gmail.com",
+      "password": "112233",
+      "confirm": "112233",
+      "id": 1
+    }
+  ]
 }
