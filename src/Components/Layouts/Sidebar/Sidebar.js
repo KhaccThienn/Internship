@@ -38,7 +38,7 @@ function Sidebar() {
           </li>
 
           <li className={cx("home", )}>
-            <Link to="/learn" className={cx("text-center", "cursor-pointer")}>
+            <Link to="/frontend" className={cx("text-center", "cursor-pointer")}>
               <div>
                 <FaLightbulb />
               </div>

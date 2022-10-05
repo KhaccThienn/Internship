@@ -3,22 +3,20 @@ import classNames from "classnames/bind";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 import { GrMenu } from "react-icons/gr";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "~/Asset/logo.png";
 import "./header.module.css";
 import style from "./header.module.css";
 import { useDispatch } from 'react-redux/es/exports';
+import { useEffect, useState } from "react";
 
 
 let cx = classNames.bind(style);
 
 function Header() {
+  const [search, setSearch] = useState('')
   const dispatch = useDispatch()
   const user = useSelector(state => state.UserReducers.user);
-  const submitForm = (e) => {
-    e.preventDefault();
-    console.log(e.target)
-  }
 
   return (
     <div>
@@ -48,7 +46,6 @@ function Header() {
             )}
           >
             <input
-
               className={cx("input-header")}
               placeholder="Tim kiem khoa hoc, bai viet, v.v..."
             />
@@ -64,7 +61,7 @@ function Header() {
               <div className={cx("col-lg-9", "col-4")}>
                 <Button className={cx("bt-header", "position-relative")}>
                   <div className="dropdown">
-                    <button className={cx('btn', 'btn-secondary', 'text-white', 'button-login')} type="button" data-toggle="dropdown" aria-expanded="false">
+                    <div className={cx('btn', 'btn-secondary', 'text-white', 'button-login')} type="button" data-toggle="dropdown" aria-expanded="false">
                       {
                         !user.name && (
                           <Link to="/login" className="text-white text-decoration-none">
@@ -72,7 +69,7 @@ function Header() {
                           </Link>
                         )
                       }
-                    </button>
+                    </div>
 
                     {
                       user.name && <div className={cx("dropdown-menu", "login", 'text-center')} id="login"><p>{user.name}</p>

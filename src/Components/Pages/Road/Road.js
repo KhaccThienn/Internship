@@ -74,10 +74,7 @@ function Road() {
                   việc với dữ liệu, công việc thường nặng tính logic hơn. Chúng
                   ta sẽ tìm hiểu thêm về lộ trình học Back-end nhé.
                 </p>
-                <Link to="/upcomming"
-                  className={cx("btn", "btn-checkout")}
-                  onclick="navigateTo()"
-                >
+                <Link to="/upcomming" className={cx("btn", "btn-checkout")}>
                   Xem Chi Tiết
                 </Link>
               </div>
@@ -104,12 +101,12 @@ function Road() {
                 Hàng nghìn người khác đang học lộ trình giống như bạn. Hãy tham
                 gia hỏi đáp, chia sẻ và hỗ trợ nhau trong quá trình học nhé.
               </p>
-              <button
+              <Link
+                to="https://www.facebook.com/"
                 className={cx("btn", "btn-checkout")}
-                onclick="navigated()"
               >
                 Tham Gia Ngay
-              </button>
+              </Link>
             </div>
             <div className="col-lg-6">
               <img src={grcard} alt="" />
