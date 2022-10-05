@@ -244,7 +244,7 @@
       "author": "LuongNA",
       "maintain": "Chúng ta sẽ tìm hiểu về Flexbox qua những ví dụ trực quan, đơn giản"
     },
-    
+
     {
       "id": 22,
       "name": "Responsive là gì? | Học lập trình web online | Tự học lập trình cơ bản",
@@ -377,7 +377,105 @@
       "id": 38,
       "name": "Khai Báo Biến",
       "url": "https://www.youtube.com/embed/CLbx37dqYEI?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
-      "courseId": 4
+      "courseId": 4,
+      "author": "LuanNV",
+      "maintain": "Hôm nay, chúng ta sẽ học về cách khai báo biến trong JavaScript"
+    },
+    {
+      "id": 39,
+      "name": "Một số hàm Built-in",
+      "url": "https://www.youtube.com/embed/rSV33HGotgE?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
+      "courseId": 4,
+      "author": "LuanNV",
+      "maintain": "Chúng ta sẽ tìm hiểu về một số các hàm Built-in ( các hàm xây dựng sẵn )"
+    },
+    {
+      "id": 40,
+      "name": "Câu lệnh điều kiện trong JavaScript",
+      "url": "https://www.youtube.com/embed/sXm7XGJykak?list=PLgk9x84DhO7VHqNY74brkPNmZpJj1uNvX",
+      "courseId": 4,
+      "author": "LuanNV",
+      "maintain": "Chúng ta sẽ tìm hiểu về một số các hàm Built-in ( các hàm xây dựng sẵn )"
+    },
+    {
+      "id": 41,
+      "name": "Toán tử trong JavaScript - Phần 1",
+      "url": "https://www.youtube.com/embed/o5QMg94hovU",
+      "courseId": 4,
+      "author": "F9",
+      "maintain": "Chúng ta sẽ tìm hiểu về các toán tử trong javascript"
+    },
+    {
+      "id": 42,
+      "name": "Toán tử trong JavaScript - Phần 2",
+      "url": "https://www.youtube.com/embed/a-XMkzagw2w",
+      "courseId": 4,
+      "author": "F9",
+      "maintain": "Chúng ta sẽ tìm hiểu về các toán tử trong javascript"
+    },
+    {
+      "id": 43,
+      "name": "Cấu Trúc Vòng Lặp Trong JavaScript",
+      "url": "https://www.youtube.com/embed/MlLSt1gWadU?list=PLgk9x84DhO7VHqNY74brkPNmZpJj1uNvX",
+      "courseId": 4,
+      "author": "F9",
+      "maintain": "Trong bài này, mình sẽ hướng dẫn các bạn về cấu trúc vòng lặp trong Javascript. Mình sẽ lần lượt giới thiệu về vòng lặp FOR, WHILE, DO - WHILE và một ít kiến thức về đệ quy."
+    },
+    {
+      "id": 44,
+      "name": "DOM - Xử lý các phần tử HTML trong Javascript",
+      "url": "https://www.youtube.com/embed/4zF7dw0Gkj4?list=PLgk9x84DhO7VHqNY74brkPNmZpJj1uNvX",
+      "courseId": 4,
+      "author": "F9",
+      "maintain": " Trong bài này, chúng ta sẽ tìm hiểu một phần rất quan trọng là DOM - xử lý các phần tử HTML trong Javascript. Qua bài học này, chúng ta sẽ biết các truy xuất, lấy dữ liệu, các thuộc tính từ các thẻ html, cũng như cách thêm, xóa các thẻ html."
+    },
+    {
+      "id": 45,
+      "name": "Event - Sự kiện trong Javascript",
+      "url": "https://www.youtube.com/embed/I3LcwJuo95w?list=PLgk9x84DhO7VHqNY74brkPNmZpJj1uNvX",
+      "courseId": 4,
+      "author": "F9",
+      "maintain": "Trong bài học này, chúng ta sẽ tìm hiểu về event - sự kiện trong Javascript. Chúng ta sẽ tìm hiểu về các loại sự kiện, một số ví dụ và cách  thêm các sự kiện cho thẻ html."
+    },
+    {
+      "id": 46,
+      "name": "Biểu Thức Chính Quy - RegularExpressions",
+      "url": "https://www.youtube.com/embed/R9ijAyPIFKI",
+      "courseId": 4,
+      "author": "F9",
+      "maintain": "Trong bài học này, chúng ta sẽ tìm hiểu về biểu thức chính quy - RegularExpressions trong Javascript"
+    },
+    {
+      "id": 47,
+      "name": "Promise trong Javascript",
+      "url": "https://www.youtube.com/embed/XN2mt1i1kjk?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
+      "courseId": 4,
+      "author": "F9",
+      "maintain": "Trong bài học này, chúng ta sẽ biết thêm về 1 khái niệm quan trọng: Promise"
+    },
+    {
+      "id": 48,
+      "name": "Fetch - Fetch trong Javascript",
+      "url": "https://www.youtube.com/embed/8KkM6JFjJZA?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
+      "courseId": 4,
+      "author": "F9",
+      "maintain": "Trong bài học này, chúng ta sẽ được biết về Fetch trong Javascript là gì"
+    },
+    {
+      "id": 49,
+      "name": "JSON server - Cài đặt thư viện JSON server",
+      "url": "https://www.youtube.com/embed/5UJGRHNZc9M?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
+      "courseId": 4,
+      "author": "F9",
+      "maintain": "Trong bài học này, chúng ta sẽ cài đặt thư viện JSON Server và cách sử dụng nó"
+    },
+    {
+      "id": 50,
+      "name": "Sử dụng Postman làm việc với REST API",
+      "url": "https://www.youtube.com/embed/CvX_5uyUXSs?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
+      "courseId": 4,
+      "author": "F9",
+      "maintain": "Trong bài học này, chúng ta sẽ học cách sử dụng Postman làm việc với REST API"
     },
     {
       "id": "51",
