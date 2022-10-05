@@ -5,14 +5,14 @@
       "img": "https://htmldemo.net/edumall/edumall/assets/images/courses/courses-1.jpg",
       "name": "Khóa Học Kiến Thức Nền Tảng",
       "author": "LuanNV",
-      "level": "basic"
+      "level": "Basic"
     },
     {
       "id": 2,
       "img": "https://htmldemo.net/edumall/edumall/assets/images/courses/courses-2.jpg",
       "name": "Khóa Học Responsive Web Design",
       "author": "LuongNA",
-      "level": "basic"
+      "level": "Basic"
     },
     {
       "id": 3,
@@ -592,10 +592,10 @@
   "account": [],
   "user": [
     {
-      "name": "dsadsa",
-      "email": "muzankibut112@gmail.com",
-      "password": "123456",
-      "confirm": "123456",
+      "name": "dadd",
+      "email": "asacb@gmail.com",
+      "password": "112233",
+      "confirm": "112233",
       "id": 1
     }
   ]
