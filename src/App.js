@@ -25,7 +25,7 @@ function App() {
         <Route path="/" element={< MasterLayouts children={<Home />} />} />
         <Route path="/road" element={< MasterLayouts children={<Road />} />} />
         <Route path="/blog" element={< MasterLayouts children={<Blog />} />} />
-        <Route path="/learn" element={< MasterLayouts children={<Learn />} />} />
+        <Route path="/learn/:id" element={< MasterLayouts children={<Learn />} />} />
         <Route path="/about" element={< MasterLayouts children={<About />} />} />
         <Route path="/contact" element={< MasterLayouts children={<Contact />} />} />
         <Route path="/test" element={< MasterLayouts children={<Test />} />} />

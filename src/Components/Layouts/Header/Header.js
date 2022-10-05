@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Button } from "antd";
 import classNames from "classnames/bind";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
@@ -8,7 +9,9 @@ import logo from "~/Asset/logo.png";
 import "./header.module.css";
 import style from "./header.module.css";
 import { useDispatch } from 'react-redux/es/exports';
-import { useEffect, useState } from "react";
+import BoxSearch from "./BoxSearch/BoxSearch"
+import axios from "axios";
+import * as productService from "~/services/productService";
 
 
 let cx = classNames.bind(style);
@@ -17,6 +20,24 @@ function Header() {
   const [search, setSearch] = useState('')
   const dispatch = useDispatch()
   const user = useSelector(state => state.UserReducers.user);
+
+  const [keyWord, setKeyWord] = useState('');
+  const [showProducts, setShowProducts] = useState([]);
+  const reset = () => {
+    setKeyWord('')
+  }
+  useEffect(() => {
+    const filterByKeyName = async (keyWord) => {
+      const data = await productService.filterByKeyName(keyWord);
+      setShowProducts(data);
+      console.log(keyWord);
+      console.log(data);
+    }
+    const timeOut = setTimeout(() => {
+      filterByKeyName(keyWord);
+    }, 300);
+    return () => clearTimeout(timeOut);
+  }, [keyWord])
 
   return (
     <div>
@@ -48,9 +69,13 @@ function Header() {
             <input
               className={cx("input-header")}
               placeholder="Tim kiem khoa hoc, bai viet, v.v..."
+              onChange={e => setKeyWord(e.target.value.trim())}
             />
             <AiOutlineSearch className={cx("icon-search")} />
+
+
           </form>
+          {keyWord !== '' && <BoxSearch keyWord={keyWord} data={showProducts} reset={reset} />}
           <div className={cx("col-lg-2", "header-log", "col-md-3", "col-4")}>
             <div className="row">
               <div className={cx("col-lg-3", "cart-icon")}>
