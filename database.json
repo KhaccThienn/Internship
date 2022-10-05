@@ -378,7 +378,88 @@
       "name": "Khai Báo Biến",
       "url": "https://www.youtube.com/embed/CLbx37dqYEI?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
       "courseId": 4
+    },
+    {
+      "id": "51",
+      "name": "ReactJS là gì? Tại sao nên học ReactJS?",
+      "url": "https://www.youtube.com/embed/x0fSBAgBrOQ?list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q",
+      "courseId": "5",
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về ReactJS"
+    },
+    {
+      "id": "52",
+      "name": "Arrow function trong Javascript ES6",
+      "url": "https://www.youtube.com/embed/9QeNLypIiZs?list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q",
+      "courseId": "5",
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Arrow function trong Javascript ES6"
+    },
+    {
+      "id": "53",
+      "name": "Module trong javascript ES6",
+      "url": "https://www.youtube.com/embed/08lWi4T2Bfg?list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q",
+      "courseId": "5",
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Module trong javascript ES6"
+    },
+    {
+      "id": "54",
+      "name": "Enhanced object literals trong javascript ES6",
+      "url": "https://www.youtube.com/embed/WB6FQdp41hs?list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q",
+      "courseId": "5",
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Enhanced object literals trong javascript ES6"
+    },
+    {
+      "id": "55",
+      "name": "Spread trong javascript ES6",
+      "url": "https://www.youtube.com/embed/MJZICS7nQk8?list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q",
+      "courseId": "",
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Spread trong javascript ES6"
+    },
+    {
+      "id": "56",
+      "name": "Destructuring trong javascript ES6",
+      "url": "https://www.youtube.com/embed/J1m4vLDUhEI?list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q",
+      "courseId": "5",
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Destructuring trong javascript ES6"
+    },
+    {
+      "id": "57",
+      "name": "JSX là gì? Tại sao cần JSX?",
+      "url": "https://www.youtube.com/embed/samx2yC15Pg?list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q",
+      "courseId": "5",
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về JSX"
+    },
+    {
+      "id": "58",
+      "name": "JSX render Arrays | JSX FQA",
+      "url": "https://www.youtube.com/embed/i1cjVyIZCKs?list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q",
+      "courseId": "5",
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về JSX render Arrays | JSX FQA"
+    },
+    {
+      "id": "59",
+      "name": "Create React App",
+      "url": "https://www.youtube.com/embed/gA3rFa6uu14?list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q",
+      "courseId": "5",
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về cách Create React App"
+    },
+    {
+      "id": "60",
+      "name": "Thư viện clsx và classnames?",
+      "url": "https://www.youtube.com/embed/T1NogjaceIo?list=PL_-VfJajZj0UXjlKfBwFX73usByw3Ph9Q3",
+      "courseId": "5",
+      "author": "LuongNA",
+      "maintain": "Chúng ta sẽ tìm hiểu về Thư viện clsx và classnames?"
     }
+
   ],
   "cart": [],
   "account": [],
