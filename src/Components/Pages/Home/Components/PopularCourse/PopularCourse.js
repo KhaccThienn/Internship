@@ -12,7 +12,9 @@ function PopularCourse() {
     axios.get("http://localhost:9999/thumpCourse").then((res) => {
       console.log(course);
       setCourse(res.data);
-    });
+    }).catch((err) => { 
+      console.log(err);
+    })
   }, []);
 
   return (
@@ -26,17 +28,21 @@ function PopularCourse() {
             return (
               <div className="col-lg-3 col-md-6 col-sm-12" key={index}>
                 <img src={items.img} alt="" className="card-img" />
-                <p className={cx("home-level", "mt-2")}>{items.level}</p>
-                <p className={cx("text-center", "font-weight-bold", "home-text", "text-truncate")}>
+                <p className={cx("home-level", "mt-2", "text-capitalize")}>
+                  {items.level}
+                </p>
+                <p
+                  className={cx(
+                    "text-center",
+                    "font-weight-bold",
+                    "home-text",
+                    "text-truncate",
+                    "text-capitalize"
+                  )}
+                >
                   {items.name}
                 </p>
-                <p>By: { items.author }</p>
-                <Link
-                  to=""
-                  className="btn btn-outline-dark text-center home-btn"
-                >
-                  Học Ngay!
-                </Link>
+                <p>By: {items.author}</p>
               </div>
             );
           })}

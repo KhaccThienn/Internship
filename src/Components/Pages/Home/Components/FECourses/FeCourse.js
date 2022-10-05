@@ -23,11 +23,11 @@ function FeCourse() {
         </h4>
         <div className="container-fluid">
           <div className="row">
-            {courses.map((i) => {
+            {courses.map((i, index) => {
               return i.id < 5 ? (
                 <div
                   className="col-lg-3 col-md-4 col-sm-12 cursor-pointer"
-                  key={i.id}
+                  key={index}
                 >
                   <Link to={`/dFree/${i.id}`} className="text-decoration-none">
                     <img src={i.image} alt="" className="card-img" />
@@ -48,7 +48,7 @@ function FeCourse() {
                   </Link>
                 </div>
               ) : (
-                <div></div>
+                <div key={index}></div>
               );
             })}
           </div>
