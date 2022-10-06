@@ -1,12 +1,11 @@
 import axios from "axios";
 import classNames from "classnames/bind";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BsFillCheckCircleFill, BsFillClockFill } from "react-icons/bs";
 import { IoPeople } from "react-icons/io5";
 import { MdLibraryBooks } from "react-icons/md";
-import { useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import oe96bk from "~/Asset/96bk.png";
-import css from "~/Asset/css.png";
 import anhluong from "~/Asset/gv_nguyen_anh_luong.jpg";
 import anhluan from "~/Asset/gv_nguyen_van_luan.jpg";
 import rika from "~/Asset/rika.png";
@@ -14,9 +13,11 @@ import style from "./dfree.module.css";
 
 let cx = classNames.bind(style);
 
-function DetailFree() {
+function DetailFree({ setIdCourse }) {
   const [dCourse, setDCourse] = useState({});
   const [listDetail, setListDetail] = useState([]);
+  const [items, setItems] = useState([]);
+  const navigate = useNavigate();
   const { id } = useParams();
   const url = "http://localhost:9999/FECourse";
   const urlDetail = `http://localhost:9999/course/?courseId=${id}`;
@@ -25,11 +26,12 @@ function DetailFree() {
       .get(`${url}/${id}`)
       .then((res) => {
         setDCourse(res.data);
-        console.log(res.data);
+        // console.log(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
+
     axios
       .get(urlDetail)
       .then((res) => {
@@ -38,8 +40,24 @@ function DetailFree() {
       .catch((err) => {
         console.log(err);
       });
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0);
+    setIdCourse(id)
   }, [id, urlDetail]);
+
+  const addToCart = (item) => {
+    setItems(JSON.parse(localStorage.getItem("cart"), "[]"));
+    console.log(item);
+    var itemm = {
+      course: item,
+      qty: 1,
+    };
+
+    items.push(itemm);
+    localStorage.setItem("cart", JSON.stringify(items));
+    console.log(items);
+
+    navigate("/cart");
+  };
 
   return (
     <div className={cx("text-detail")}>
@@ -50,16 +68,27 @@ function DetailFree() {
         <div className={cx("row")}>
           <div className={cx("col-lg-5", "text-detail1")}>
             <p className="h4">Bạn Sẽ Học Được Gì ?</p>
-            <p>{ dCourse.onee }</p>
-            <p>{ dCourse.twoo }</p>
-            <p>{ dCourse.threee }</p>
-            <p>{ dCourse.fourr }</p>
+            <p>{dCourse.onee}</p>
+            <p>{dCourse.twoo}</p>
+            <p>{dCourse.threee}</p>
+            <p>{dCourse.fourr}</p>
           </div>
           <div className={cx("col-lg-6", "p-0", "learn-detail")}>
             {/* ảnh lấy từ json */}
             <img src={dCourse.image} alt="" className="img-detail" />
-            <p>Miễn Phí</p>
-            <button>Học Ngay</button>
+            <p>
+              {dCourse.price === 0 ? (
+                <Link
+                  to={`/learn`}
+                  className={cx("btn", "btn-checkout")}
+                >
+                  {" "}
+                  Hoc Ngay{" "}
+                </Link>
+              ) : (
+                <button onClick={(e) => addToCart(dCourse)}> Mua Ngay </button>
+              )}
+            </p>
           </div>
         </div>
       </div>
@@ -101,9 +130,7 @@ function DetailFree() {
               <i>
                 <BsFillClockFill />
               </i>
-              <p className="h4">{
-                Math.floor(Math.random() * 100 ) + 1
-              } h</p>
+              <p className="h4">{Math.floor(Math.random() * 100) + 1} h</p>
               <p className="h6">Thời Gian Hoàn Thành Khóa Học</p>
             </div>
             <div>

@@ -1,39 +1,81 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-import style from "./learn.module.css";
 import classNames from "classnames/bind";
-import hau from "~/Asset/hau_ngo.jpg";
+import { useEffect, useState } from "react";
+import { BiSkipNext, BiSkipPrevious } from "react-icons/bi";
+import { MdOutlineDisabledByDefault } from "react-icons/md";
+import { useParams } from "react-router-dom";
+import Swal from "sweetalert2";
 import luannv from "~/Asset/gv_nguyen_van_luan.jpg";
+import hau from "~/Asset/hau_ngo.jpg";
+import style from "./learn.module.css";
 
 const cx = classNames.bind(style);
 
-function Learn() {
+function Learn({ idCourse }) {
   const [urlCourse, setUrlCourse] = useState({});
+  const [nameCourse, setNameCourse] = useState("");
+  const [cid, setCID] = useState(1);
+  const { id } = useParams();
+
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener("mouseenter", Swal.stopTimer);
+      toast.addEventListener("mouseleave", Swal.resumeTimer);
+    },
+  });
+
+  const next = () => {
+    setCID(cid + 1);
+  };
+  const prev = () => {
+    cid <= 1
+      ? Toast.fire({
+          icon: "error",
+          title: "Bạn Không Thể Làm Điều Này",
+        })
+      : setCID(cid - 1);
+  };
 
   useEffect(() => {
     axios
-      .get("http://localhost:9999/course")
+      .get(`http://localhost:9999/course?courseId=${idCourse}&id=${cid}`)
       .then((res) => {
-        console.log(urlCourse);
+        console.log(res.data[0]);
+        setUrlCourse(res.data[0]);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+
+    axios
+      .get(`http://localhost:9999/FECourse/${urlCourse.courseId}`)
+      .then((res) => {
+        setNameCourse(res.data.name);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [cid, id, idCourse, urlCourse]);
 
   return (
     <div>
       <div className={cx("main p-5")}>
         <div className="text-center">
-          <div className="h2">Khóa Học: Xây dựng web bằng HTML 5 - CSS 3</div>
+          <div className="h2">Khóa Học: {nameCourse}</div>
         </div>
-        <p>Bài 1: Giới Thiệu Về Khóa Học</p>
+        <p>
+          Bài {urlCourse.id}: {urlCourse.name}
+        </p>
         <div className={cx("video")}>
           <iframe
-            width="1280"
-            height="720"
-            src="https://www.youtube.com/embed/pQN-pnXPaVg"
-            title="HTML Full Course - Build a Website Tutorial"
+            className={cx("iframe")}
+            src={urlCourse.url}
+            title={urlCourse.name}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -41,6 +83,21 @@ function Learn() {
         </div>
 
         <div className={cx("description")}>
+          {cid <= 1 ? (
+            <div className={cx("btn-checkout")} onClick={(e) => prev()}>
+              {" "}
+              <MdOutlineDisabledByDefault />{" "}
+            </div>
+          ) : (
+            <div className={cx("btn-checkout")}>
+              {" "}
+              <BiSkipPrevious onClick={(e) => prev()} />{" "}
+            </div>
+          )}
+
+          <div className={cx("btn-checkout")} onClick={(e) => next()}>
+            <BiSkipNext />
+          </div>
           <div className={cx("update")}>
             <p>Cập Nhật Ngày 01/08/2020</p>
             <p>Powered by F9 - Bachkhoa Aptech</p>
@@ -49,12 +106,9 @@ function Learn() {
             <p className="font-weight-bold h3">Chi Tiết Bài Học:</p>
             <div className={cx("list")}>
               <ul className="ml-3 d-inline-block">
-                <li>Giảng Viên: Nguyễn Văn Luận</li>
+                <li>Giảng Viên: {urlCourse.author}</li>
                 <li>Thời Gian: 18 Phút</li>
-                <li>
-                  Nội Dung: Giới Thiệu Về Khóa Học, Ngôn Ngữ Đánh Dấu Siêu Văn
-                  Bản HTML5
-                </li>
+                <li>Nội Dung: {urlCourse.maintain}</li>
               </ul>
             </div>
 
@@ -68,7 +122,7 @@ function Learn() {
             </div>
           </div>
         </div>
-
+        {/* 
         <div className={cx("exc")}>
           <p className="font-weight-bold h3">Bài Tập Làm Thêm</p>
 
@@ -108,7 +162,7 @@ function Learn() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className={cx("cmt")}>
           <div className={cx("head")}>
@@ -156,11 +210,7 @@ function Learn() {
                   </div>
                   <div className={cx("user", "ml-5", "mt-3")}>
                     <div className={cx("avt")}>
-                      <img
-                        src={luannv}
-                        className="card-img"
-                        alt=""
-                      />
+                      <img src={luannv} className="card-img" alt="" />
                     </div>
                     <div className={cx("text")}>
                       <p className={cx("username", "font-weight-bold")}>
@@ -187,11 +237,7 @@ function Learn() {
                   </div>
                   <div className={cx("user", "ml-5", "mt-3")}>
                     <div className={cx("avt")}>
-                      <img
-                        src={luannv}
-                        className="card-img"
-                        alt=""
-                      />
+                      <img src={luannv} className="card-img" alt="" />
                     </div>
                     <div className={cx("text")}>
                       <p className={cx("username", "font-weight-bold")}>
@@ -218,11 +264,7 @@ function Learn() {
                   </div>
                   <div className={cx("user", "ml-5", "mt-3")}>
                     <div className={cx("avt")}>
-                      <img
-                        src={luannv}
-                        className="card-img"
-                        alt=""
-                      />
+                      <img src={luannv} className="card-img" alt="" />
                     </div>
                     <div className={cx("text")}>
                       <p className={cx("username", "font-weight-bold")}>

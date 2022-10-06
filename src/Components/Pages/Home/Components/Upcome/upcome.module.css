@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-level {
+  border: 1px solid #111;
+  display: inline-block;
+  padding: 5px 18px !important;
+}
+
+.home-text {
+  font-size: 17px;
+}
+
+.home-btn {
+  border-radius: 0;
+  padding: 9px 89px;
+}
+
+.home-target {
+  background: #EFF5F7;
+}
+
+.home-textta {
+  color: #0071DC;
+}
+
+.home-target .fa-lightbulb {
+  font-size: 50px;
+  margin-left: 60px;
+}
+
+.homeex {
+  border-radius: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 15px 131px;
+}
+
+.card-content {
+  margin-top: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.home-partner {
+  margin-top: 20px !important;
+}
+
+.about-text {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.about-img {
+  border-radius: 50%;
+}
+.pricee{
+  font-weight: bold;
+  font-size: 20px;
+  color: #F05123;
+}
+.course a{ 
+  text-decoration: none !important;
+}

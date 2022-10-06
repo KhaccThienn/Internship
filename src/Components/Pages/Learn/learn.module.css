@@ -87,3 +87,20 @@ ul li:first-child {
 .text p:first-child {
   margin-bottom: 0 !important;
 }
+.btn-checkout {
+  display: inline-block !important;
+  background-color: #F05123 !important;
+  color: white !important;
+  border-radius: 0 !important;
+  padding: 10px 30px ;
+  border-radius: 10px;
+  cursor: pointer !important;
+  margin-right: 20px;
+}
+.btn-checkout svg{
+  font-size: 30px;
+}
+.iframe{
+  width: 100% !important;
+  height: 750px !important;
+}
