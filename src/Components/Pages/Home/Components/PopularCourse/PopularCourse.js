@@ -33,7 +33,7 @@ function PopularCourse() {
                 </p>
                 <p
                   className={cx(
-                    "text-center",
+                    "text-left",
                     "font-weight-bold",
                     "home-text",
                     "text-truncate",

@@ -43,11 +43,11 @@
     }
 
     .laptop {
-        display: none;
+        display: none !important;
     }
 
     .tablet {
-        display: none;
+        display: none !important;
         ;
     }
 
@@ -190,6 +190,7 @@
         width: 500px;
         height: 40px;
         border-radius: 10px;
+        padding-left: 50px;
     }
 
     .icon-search {
@@ -199,9 +200,9 @@
         font-size: 25px !important;
     }
 
-    ::placeholder {
+    /* ::placeholder {
         padding-left: 40px;
-    }
+    } */
 
     /* .bt-header {
         border-radius: 10px !important;
