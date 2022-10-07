@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img {
+  width: 20%;
+}
+
+.btn-checkout {
+  background-color: #F05123 !important;
+  color: white !important;
+  border-radius: 0 !important;
+  padding: 10px;
+}
