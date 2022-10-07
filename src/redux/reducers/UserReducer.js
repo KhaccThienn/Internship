@@ -1,5 +1,3 @@
-
-
 const initState = {
     user: JSON.parse(localStorage.getItem("user") || "[]")
 }
