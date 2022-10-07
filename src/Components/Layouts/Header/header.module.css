@@ -216,6 +216,8 @@
     .button-login{
         background-color: #F05123 !important;
         outline: none !important;
+        border: none !important;
+        border-radius: 0 !important;
     }
     .login{
         z-index: 1024;

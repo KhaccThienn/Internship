@@ -5,7 +5,7 @@ import classNames from 'classnames/bind';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { register } from '~/services/user.service';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const cx = classNames.bind(style);
 
@@ -38,8 +38,8 @@ function Register() {
     return (
         <div className={cx('bg-register', 'd-block')}>
             <div className=''>
-                <form onSubmit={formik.handleSubmit} className={cx('form-submit','from')}>
-                <h3 className='text-center text-uppercase font-weight-bold'>Đăng ký</h3>
+                <form onSubmit={formik.handleSubmit} className={cx('form-submit', 'from')}>
+                    <h3 className='text-center text-uppercase font-weight-bold'>Đăng ký</h3>
                     <div className={cx("mt-3")}>
                         <label className="mb-0 mr-2 font-weight-bold">
                             Họ và tên
@@ -101,10 +101,14 @@ function Register() {
                     </p>
                     <button
                         type="submit"
-                        className={cx("btn", "text-uppercase", "btn-button", "mb-3", "mt-4",'btn-block')}
+                        className={cx("btn", "text-uppercase", "btn-button", "mb-3", "mt-4", 'btn-block')}
                     >
                         Đăng ký
                     </button>
+                    <div className={cx('text-center','mb-3')}>
+                        <span>Bạn đã có tài khoản. </span>
+                        <Link to={"/login"} className='text-danger text-decoration-none'>Đăng nhập ngay!</Link>
+                    </div>
                 </form>
             </div>
         </div>
