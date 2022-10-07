@@ -9,23 +9,26 @@ const cx = classNames.bind(styled);
 function Cart() {
   const [carts, setCarts] = useState([]);
   const [total, setTotal] = useState();
+  const [rend, setRend] = useState(true)
   useEffect(() => {
     window.scrollTo(0, 0);
     var cartss = JSON.parse(localStorage.getItem("cart"), "[]")
-    setCarts(JSON.parse(localStorage.getItem("cart"), "[]"));
     var a = 0;
     for (let index = 0; index < cartss.length; index++) {
-      // console.log(cartss[index]);
-      a += cartss[index].course.price * cartss[index].qty;
+      console.log(cartss);
+      a += cartss[index].price ;
     }
     setTotal(a);
-  }, []);
+    setCarts(JSON.parse(localStorage.getItem("cart"), "[]"));
+  }, [rend]);
 
   const delFromCart = (id) => {
-    var find = carts.findIndex((item) => item.course.id === id);
+    var find = carts.findIndex((item) => item.id === id);
     carts.splice(find, 1);
     localStorage.setItem("cart", JSON.stringify(carts));
+    setRend(!rend)
   };
+
 
   return (
     <div className="p-5">
@@ -47,22 +50,21 @@ function Cart() {
               </tr>
             </thead>
             <tbody>
-              {/* {console.log(carts)} */}
               {carts.map((item, i) => {
                 return (
                   <tr key={i}>
                     <th scope="row" className={cx("img")}>
                       <img
-                        src={item.course.image}
+                        src={item.image}
                         alt=""
                         className="card-img"
                       />
                     </th>
-                    <th>{item.course.name}</th>
+                    <th>{item.name}</th>
                     <td>{!item ? <></> : <p>BachKhoa - Aptech</p>}</td>
-                    <td>{item.course.price * item.qty} vnd</td>
-                    <td>
-                      <BsTrash onClick={(e) => delFromCart(item.course.id)} />
+                    <td>{item.price } vnd</td>
+                    <td onClick={(e) => delFromCart(item.id)}>
+                      <BsTrash />
                     </td>
                   </tr>
                 );
