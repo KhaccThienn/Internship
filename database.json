@@ -98,7 +98,7 @@
       "subtitle": "Khóa học Javascript Pro nâng cao của F9, mất phí hihi",
       "price": 1528000,
       "onee": "Các kiến thức nâng cao của Javascript giúp code trở nên tối ưu hơn",
-      "twoo" : "Hiểu được các khái niệm khó như từ khóa this, phương thức bind, call, apply & xử lý bất đồng bộ",
+      "twoo": "Hiểu được các khái niệm khó như từ khóa this, phương thức bind, call, apply & xử lý bất đồng bộ",
       "threee": "Có nền tảng Javascript vững chắc để làm việc với mọi thư viện, framework viết bởi Javascript",
       "fourr": "Hiểu được cách tư duy nâng cao của các lập trình viên có kinh nghiệm"
     }
@@ -621,6 +621,13 @@
       "password": "112233",
       "confirm": "112233",
       "id": 1
+    },
+    {
+      "name": "demo",
+      "email": "test@gmail.com",
+      "password": "123456",
+      "confirm": "123456",
+      "id": 2
     }
   ]
 }
