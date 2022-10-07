@@ -4,10 +4,10 @@ const initState = {
     totalPrice: 0
 }
 
-initState.items.forEach((item) => {
-    initState.totalPrice += (item.product.prices * item.quantity);
-    initState.totalQty += item.quantity
-})
+// initState.items.forEach((item) => {
+//     initState.totalPrice += (item.product.prices * item.quantity);
+//     initState.totalQty += item.quantity
+// })
 
 const CartReducer = (state = initState, action) => {
 
