@@ -629,5 +629,32 @@
       "confirm": "123456",
       "id": 2
     }
+  ],
+
+  "banking": [
+    {
+      "id": 1, 
+      "name": "Techcombank",
+      "logo": "https://printgo.vn/uploads/file-logo/1/512x512.d3a245120576b1318b29f0bcdba4aca9.ai.1.png",
+      "stk": "1903 8438 9630 12"
+    },
+    {
+      "id": 2,
+      "name": "MB Bank",
+      "logo": "https://nganhang24h.vn/wp-content/uploads/2020/02/mbbank-logo.png",
+      "stk": "0392 689 213"
+    },
+    {
+      "id": 3,
+      "name": "Momo",
+      "logo": "https://upload.wikimedia.org/wikipedia/vi/f/fe/MoMo_Logo.png?20201011055544",
+      "stk": "0392 689 213"
+    },
+    {
+      "id": 4,
+      "name": "TP Bank",
+      "logo": "https://static.wixstatic.com/media/9d8ed5_9b46446656b14efc88b058399cd81d9a~mv2.png/v1/fill/w_1182,h_1182,al_c/9d8ed5_9b46446656b14efc88b058399cd81d9a~mv2.png",
+      "stk": "292 58 555 555"
+    }
   ]
 }

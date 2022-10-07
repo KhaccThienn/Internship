@@ -101,12 +101,13 @@ function Road() {
                 Hàng nghìn người khác đang học lộ trình giống như bạn. Hãy tham
                 gia hỏi đáp, chia sẻ và hỗ trợ nhau trong quá trình học nhé.
               </p>
-              <Link
-                to="https://www.facebook.com/"
-                className={cx("btn", "btn-checkout")}
+              <a
+                href="https://www.facebook.com/"
+                target={"_blank"}
+                className={cx("btn", "btn-checkout")} rel="noreferrer"
               >
                 Tham Gia Ngay
-              </Link>
+              </a>
             </div>
             <div className="col-lg-6">
               <img src={grcard} alt="" />

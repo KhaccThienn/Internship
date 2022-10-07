@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import classNames from 'classnames/bind'
-import styled from "./sidebar.module.css"
-import { Link } from "react-router-dom"
-import { GrAdd } from "react-icons/gr"
-import { AiFillHome } from "react-icons/ai"
+import classNames from "classnames/bind";
+import styled from "./sidebar.module.css";
+import { Link } from "react-router-dom";
+import { GrAdd } from "react-icons/gr";
+import { AiFillHome } from "react-icons/ai";
 import { FaRoad, FaLightbulb } from "react-icons/fa";
-import {BsNewspaper} from "react-icons/bs"
+import { BsNewspaper } from "react-icons/bs";
 
-const cx = classNames.bind(styled)
+const cx = classNames.bind(styled);
 
 function Sidebar() {
   return (
@@ -19,7 +19,7 @@ function Sidebar() {
             <GrAdd />
           </li>
 
-          <li className={cx("home", )}>
+          <li className={cx("home")}>
             <Link to="/" className={cx("text-center", "cursor-pointer")}>
               <div>
                 <AiFillHome />
@@ -28,25 +28,28 @@ function Sidebar() {
             </Link>
           </li>
 
-          <li className={cx("home", )}>
+          <li className={cx("home")}>
             <Link to="/road" className={cx("text-center", "cursor-pointer")}>
               <div>
                 <FaRoad />
               </div>
-              <p>Lo Trinh</p>
+              <p>Lộ Trình</p>
             </Link>
           </li>
 
-          <li className={cx("home", )}>
-            <Link to="/frontend" className={cx("text-center", "cursor-pointer")}>
+          <li className={cx("home")}>
+            <Link
+              to="/frontend"
+              className={cx("text-center", "cursor-pointer")}
+            >
               <div>
                 <FaLightbulb />
               </div>
-              <p>Hoc</p>
+              <p>Học</p>
             </Link>
           </li>
 
-          <li className={cx("home", )}>
+          <li className={cx("home")}>
             <Link to="/blog" className={cx("text-center", "cursor-pointer")}>
               <div>
                 <BsNewspaper />
@@ -60,4 +63,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar
+export default Sidebar;

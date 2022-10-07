@@ -81,19 +81,25 @@ function DetailFree({ setIdCourse }) {
             {dCourse.price === 0 ? (
               <p className={cx("price")}>Miễn Phí</p>
             ) : (
-              <p className={cx("price")}>{dCourse.price} vnd</p>
+                <p className={cx("price")}>{dCourse.price} vnd | { (dCourse.price / 22500).toFixed(2) } $</p>
             )}
 
-            <p>
+            <div>
               {dCourse.price === 0 ? (
-                <Link to={`/learn`} className={cx("btn", "btn-checkout")}>
+                <Link to={`/learn`} className={cx("btn", "btn-learn")}>
                   {" "}
-                  Hoc Ngay{" "}
+                  Học Ngay{" "}
                 </Link>
               ) : (
-                <button onClick={(e) => addToCartt(dCourse)}> Mua Ngay </button>
+                <button
+                  className={cx("btn-learn")}
+                  onClick={(e) => addToCartt(dCourse)}
+                >
+                  {" "}
+                  Mua Ngay{" "}
+                </button>
               )}
-            </p>
+            </div>
           </div>
         </div>
       </div>

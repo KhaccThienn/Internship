@@ -45,7 +45,8 @@ function Cart() {
                 <th scope="col">Ảnh</th>
                 <th scope="col">Tên Khóa Học</th>
                 <th scope="col">Tên Tác Giả</th>
-                <th scope="col">Giá Khóa Học</th>
+                <th scope="col">Giá Khóa Học (vnd)</th>
+                <th scope="col">Giá Khóa Học (usd)</th>
                 <th scope="col">Action</th>
               </tr>
             </thead>
@@ -54,15 +55,12 @@ function Cart() {
                 return (
                   <tr key={i}>
                     <th scope="row" className={cx("img")}>
-                      <img
-                        src={item.image}
-                        alt=""
-                        className="card-img"
-                      />
+                      <img src={item.image} alt="" className="card-img" />
                     </th>
                     <th>{item.name}</th>
                     <td>{!item ? <></> : <p>BachKhoa - Aptech</p>}</td>
-                    <td>{item.price } vnd</td>
+                    <td>{item.price} vnd</td>
+                    <td>{(item.price / 22500).toFixed(2)} $</td>
                     <td onClick={(e) => delFromCart(item.id)}>
                       <BsTrash />
                     </td>
@@ -72,7 +70,7 @@ function Cart() {
 
               <tr>
                 <td colSpan="4"></td>
-                <td colSpan="1">
+                <td colSpan="2">
                   <Link
                     to={"/checkout"}
                     type="button"

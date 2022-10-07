@@ -19,7 +19,7 @@ function Learn({ idCourse }) {
 
   const Toast = Swal.mixin({
     toast: true,
-    position: "top",
+    position: "center",
     showConfirmButton: false,
     timer: 3000,
     timerProgressBar: true,
@@ -28,18 +28,6 @@ function Learn({ idCourse }) {
       toast.addEventListener("mouseleave", Swal.resumeTimer);
     },
   });
-
-  const next = () => {
-    setCID(cid + 1);
-  };
-  const prev = () => {
-    cid <= 1
-      ? Toast.fire({
-          icon: "error",
-          title: "Bạn Không Thể Làm Điều Này",
-        })
-      : setCID(cid - 1);
-  };
 
   useEffect(() => {
     axios
@@ -56,11 +44,27 @@ function Learn({ idCourse }) {
       .get(`http://localhost:9999/FECourse/${urlCourse.courseId}`)
       .then((res) => {
         setNameCourse(res.data.name);
+        console.log(res.data);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, [cid, id, idCourse, urlCourse]);
+  }, [cid, id, idCourse, nameCourse, urlCourse]);
+
+  const next = () => {
+    setCID(cid + 1);
+  };
+
+  const prev = () => {
+    cid <= 1
+      ? Toast.fire({
+          icon: "error",
+          title: "Bạn Không Thể Làm Điều Này",
+        })
+      : setCID(cid - 1);
+  };
+
+
 
   return (
     <div>
