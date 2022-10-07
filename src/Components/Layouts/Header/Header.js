@@ -48,7 +48,7 @@ function Header() {
             <div className="row">
               <div className={cx("col-lg-2", "logo-header")}>
 
-                <img href="/" src={logo} alt="..." />
+                <Link to="/"><img src={logo} alt="..." /></Link>
 
               </div>
               <div className={cx("font-logo", "col-lg-10")}>
