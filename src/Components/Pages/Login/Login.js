@@ -83,9 +83,9 @@ function Login() {
               onChange={formik.handleChange}
             />
           </div>
-          <p className={cx("err")}>
-            {formik.errors.password ? formik.errors.password : ""}
-          </p>
+            <p className={cx("err")}>
+              {formik.errors.password ? formik.errors.password : ""}
+            </p>
           <button
             type="submit"
             className={cx("btn", "text-uppercase", "btn-button", "mb-4", "mt-2", "btn-block")}

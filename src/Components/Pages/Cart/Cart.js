@@ -2,17 +2,23 @@ import React, { useEffect, useState } from "react";
 import classNames from "classnames/bind";
 import styled from "./cart.module.css";
 import { BsTrash } from "react-icons/bs";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styled);
 
 function Cart() {
   const [carts, setCarts] = useState([]);
-
+  const [total, setTotal] = useState();
   useEffect(() => {
     window.scrollTo(0, 0);
-    
+    var cartss = JSON.parse(localStorage.getItem("cart"), "[]")
     setCarts(JSON.parse(localStorage.getItem("cart"), "[]"));
+    var a = 0;
+    for (let index = 0; index < cartss.length; index++) {
+      // console.log(cartss[index]);
+      a += cartss[index].course.price * cartss[index].qty;
+    }
+    setTotal(a);
   }, []);
 
   const delFromCart = (id) => {
@@ -41,7 +47,7 @@ function Cart() {
               </tr>
             </thead>
             <tbody>
-              {console.log(carts)}
+              {/* {console.log(carts)} */}
               {carts.map((item, i) => {
                 return (
                   <tr key={i}>
@@ -65,8 +71,12 @@ function Cart() {
               <tr>
                 <td colSpan="4"></td>
                 <td colSpan="1">
-                  <Link to={"/checkout"} type="button" className={cx("btn", "btn-checkout")}>
-                    Thanh Toán: 
+                  <Link
+                    to={"/checkout"}
+                    type="button"
+                    className={cx("btn", "btn-checkout")}
+                  >
+                    Thanh Toán: {total} vnd
                   </Link>
                 </td>
               </tr>
