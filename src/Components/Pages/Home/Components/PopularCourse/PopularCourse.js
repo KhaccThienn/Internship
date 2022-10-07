@@ -3,6 +3,7 @@ import classNames from "classnames/bind";
 import styled from "./popular.module.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import client1 from "~/Asset/client1.png"
 
 const cx = classNames.bind(styled);
 
@@ -12,12 +13,13 @@ function PopularCourse() {
     axios.get("http://localhost:9999/thumpCourse").then((res) => {
       console.log(course);
       setCourse(res.data);
-    }).catch((err) => { 
+    }).catch((err) => {
       console.log(err);
     })
   }, []);
 
   return (
+
     <div className={cx("container")}>
       <div className={cx("home-popular", "mt-4")}>
         <h4 className="text-center font-weight-bold mb-2">
@@ -49,6 +51,11 @@ function PopularCourse() {
         </div>
       </div>
     </div>
+
+
+
+
+
   );
 }
 
