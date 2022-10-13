@@ -1,43 +1,41 @@
-import { useEffect, useState } from "react";
 import { Button } from "antd";
 import classNames from "classnames/bind";
+import { useEffect, useState } from "react";
 import { AiOutlineSearch, AiOutlineShoppingCart } from "react-icons/ai";
 import { GrMenu } from "react-icons/gr";
 import { useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux/es/exports";
+import { Link } from "react-router-dom";
 import logo from "~/Asset/logo.png";
+import * as productService from "~/services/productService";
+import BoxSearch from "./BoxSearch/BoxSearch";
 import "./header.module.css";
 import style from "./header.module.css";
-import { useDispatch } from 'react-redux/es/exports';
-import BoxSearch from "./BoxSearch/BoxSearch"
-import axios from "axios";
-import * as productService from "~/services/productService";
-
 
 let cx = classNames.bind(style);
 
 function Header() {
-  const [search, setSearch] = useState('')
-  const dispatch = useDispatch()
-  const user = useSelector(state => state.UserReducers.user);
+  const [search, setSearch] = useState("");
+  const dispatch = useDispatch();
+  const user = useSelector((state) => state.UserReducers.user);
 
-  const [keyWord, setKeyWord] = useState('');
+  const [keyWord, setKeyWord] = useState("");
   const [showProducts, setShowProducts] = useState([]);
   const reset = () => {
-    setKeyWord('')
-  }
+    setKeyWord("");
+  };
   useEffect(() => {
     const filterByKeyName = async (keyWord) => {
       const data = await productService.filterByKeyName(keyWord);
       setShowProducts(data);
       console.log(keyWord);
       console.log(data);
-    }
+    };
     const timeOut = setTimeout(() => {
       filterByKeyName(keyWord);
     }, 300);
     return () => clearTimeout(timeOut);
-  }, [keyWord])
+  }, [keyWord]);
 
   return (
     <div>
@@ -47,9 +45,9 @@ function Header() {
           <div className={cx("col-lg-4", "col-md-2", "col-2")}>
             <div className="row">
               <div className={cx("col-lg-2", "logo-header")}>
-
-                <Link to="/"><img src={logo} alt="..." /></Link>
-
+                <Link to="/">
+                  <img src={logo} alt="..." />
+                </Link>
               </div>
               <div className={cx("font-logo", "col-lg-10")}>
                 <Link to="/">Làm Trước - Học Sau</Link>
@@ -57,7 +55,6 @@ function Header() {
             </div>
           </div>
           <form
-
             className={cx(
               "col-lg-6",
               "position-relative",
@@ -69,13 +66,13 @@ function Header() {
             <input
               className={cx("input-header")}
               placeholder="Tim kiem khoa hoc, bai viet, v.v..."
-              onChange={e => setKeyWord(e.target.value.trim())}
+              onChange={(e) => setKeyWord(e.target.value.trim())}
             />
             <AiOutlineSearch className={cx("icon-search")} />
-
-
           </form>
-          {keyWord !== '' && <BoxSearch keyWord={keyWord} data={showProducts} reset={reset} />}
+          {keyWord !== "" && (
+            <BoxSearch keyWord={keyWord} data={showProducts} reset={reset} />
+          )}
           <div className={cx("col-lg-2", "header-log", "col-md-3", "col-4")}>
             <div className="row">
               <div className={cx("col-lg-3", "cart-icon")}>
@@ -86,22 +83,43 @@ function Header() {
               <div className={cx("col-lg-9", "col-4")}>
                 <Button className={cx("bt-header", "position-relative")}>
                   <div className="dropdown">
-                    <div className={cx('btn', 'btn-secondary', 'text-white', 'button-login')} type="button" data-toggle="dropdown" aria-expanded="false">
-                      {
-                        !user.name && (
-                          <Link to="/login" className="text-white text-decoration-none">
-                            Đăng nhập
-                          </Link>
-                        )
-                      }
+                    <div
+                      className={cx(
+                        "btn",
+                        "btn-secondary",
+                        "text-white",
+                        "button-login"
+                      )}
+                      type="button"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      {!user.name && (
+                        <Link
+                          to="/login"
+                          className="text-white text-decoration-none"
+                        >
+                          Đăng nhập
+                        </Link>
+                      )}
                     </div>
 
-                    {
-                      user.name && <div className={cx("dropdown-menu", "login", 'text-center')} id="login"><p>{user.name}</p>
-                        <button className="dropdown-item" onClick={() => dispatch({ type: "REMOVE_USER" })} type="button">Đăng xuất</button></div>
-                    }
+                    {user.name && (
+                      <div
+                        className={cx("dropdown-menu", "login", "text-center")}
+                        id="login"
+                      >
+                        <p>{user.name}</p>
+                        <button
+                          className="dropdown-item"
+                          onClick={() => dispatch({ type: "REMOVE_USER" })}
+                          type="button"
+                        >
+                          Đăng xuất
+                        </button>
+                      </div>
+                    )}
                   </div>
-
                 </Button>
               </div>
             </div>

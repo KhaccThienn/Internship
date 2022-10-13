@@ -588,7 +588,7 @@
       "maintain": "Chúng ta sẽ tìm hiểu về Thư viện clsx và classnames?"
     }
   ],
-  "uppcommingCourse":[
+  "uppcommingCourse": [
     {
       "id": 1,
       "name": "HTML, CSS Pro",
@@ -611,7 +611,6 @@
       "price": "5,000,000"
     }
   ],
-
   "cart": [],
   "account": [],
   "user": [
@@ -628,12 +627,18 @@
       "password": "123456",
       "confirm": "123456",
       "id": 2
+    },
+    {
+      "name": "cuong",
+      "email": "cuongha123@gmail.com",
+      "password": "cuong123",
+      "confirm": "cuong123",
+      "id": 3
     }
   ],
-
   "banking": [
     {
-      "id": 1, 
+      "id": 1,
       "name": "Techcombank",
       "logo": "https://printgo.vn/uploads/file-logo/1/512x512.d3a245120576b1318b29f0bcdba4aca9.ai.1.png",
       "stk": "1903 8438 9630 12"
