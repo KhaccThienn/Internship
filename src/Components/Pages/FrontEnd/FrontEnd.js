@@ -48,7 +48,7 @@ function FrontEnd() {
       </div>
       <div className={cx("content-fe", "mt-5")}>
         <h4 className="font-weight-bold">Danh Sách Các Khóa Học</h4>
-        <div className="ml-5 row">
+        <div className="row">
           <div className="col-lg-8">
             {listCourse.map((i) => {
               return (

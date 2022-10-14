@@ -396,7 +396,7 @@
       "maintain": "Chúng ta sẽ tìm hiểu về No gutters"
     },
     {
-      "id": 16,
+      "id": 1,
       "name": "Sử dụng JS trong file HTML",
       "url": "https://www.youtube.com/embed/W0vEUmyvthQ?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
       "courseId": 4,
@@ -404,7 +404,7 @@
       "maintain": "Chúng ta sẽ tìm hiểu cách sử dụng JS trong file HTML"
     },
     {
-      "id": 17,
+      "id": 2,
       "name": "Khai Báo Biến",
       "url": "https://www.youtube.com/embed/CLbx37dqYEI?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
       "courseId": 4,
@@ -412,7 +412,7 @@
       "maintain": "Hôm nay, chúng ta sẽ học về cách khai báo biến trong JavaScript"
     },
     {
-      "id": 18,
+      "id": 3,
       "name": "Một số hàm Built-in",
       "url": "https://www.youtube.com/embed/rSV33HGotgE?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
       "courseId": 4,
@@ -420,7 +420,7 @@
       "maintain": "Chúng ta sẽ tìm hiểu về một số các hàm Built-in ( các hàm xây dựng sẵn )"
     },
     {
-      "id": 19,
+      "id": 4,
       "name": "Câu lệnh điều kiện trong JavaScript",
       "url": "https://www.youtube.com/embed/sXm7XGJykak?list=PLgk9x84DhO7VHqNY74brkPNmZpJj1uNvX",
       "courseId": 4,
@@ -428,7 +428,7 @@
       "maintain": "Chúng ta sẽ tìm hiểu về một số các hàm Built-in ( các hàm xây dựng sẵn )"
     },
     {
-      "id": 20,
+      "id": 5,
       "name": "Toán tử trong JavaScript - Phần 1",
       "url": "https://www.youtube.com/embed/o5QMg94hovU",
       "courseId": 4,
@@ -436,7 +436,7 @@
       "maintain": "Chúng ta sẽ tìm hiểu về các toán tử trong javascript"
     },
     {
-      "id": 21,
+      "id": 6,
       "name": "Toán tử trong JavaScript - Phần 2",
       "url": "https://www.youtube.com/embed/a-XMkzagw2w",
       "courseId": 4,
@@ -444,7 +444,7 @@
       "maintain": "Chúng ta sẽ tìm hiểu về các toán tử trong javascript"
     },
     {
-      "id": 22,
+      "id": 7,
       "name": "Cấu Trúc Vòng Lặp Trong JavaScript",
       "url": "https://www.youtube.com/embed/MlLSt1gWadU?list=PLgk9x84DhO7VHqNY74brkPNmZpJj1uNvX",
       "courseId": 4,
@@ -452,7 +452,7 @@
       "maintain": "Trong bài này, mình sẽ hướng dẫn các bạn về cấu trúc vòng lặp trong Javascript. Mình sẽ lần lượt giới thiệu về vòng lặp FOR, WHILE, DO - WHILE và một ít kiến thức về đệ quy."
     },
     {
-      "id": 23,
+      "id": 8,
       "name": "DOM - Xử lý các phần tử HTML trong Javascript",
       "url": "https://www.youtube.com/embed/4zF7dw0Gkj4?list=PLgk9x84DhO7VHqNY74brkPNmZpJj1uNvX",
       "courseId": 4,
@@ -460,7 +460,7 @@
       "maintain": " Trong bài này, chúng ta sẽ tìm hiểu một phần rất quan trọng là DOM - xử lý các phần tử HTML trong Javascript. Qua bài học này, chúng ta sẽ biết các truy xuất, lấy dữ liệu, các thuộc tính từ các thẻ html, cũng như cách thêm, xóa các thẻ html."
     },
     {
-      "id": 24,
+      "id": 9,
       "name": "Event - Sự kiện trong Javascript",
       "url": "https://www.youtube.com/embed/I3LcwJuo95w?list=PLgk9x84DhO7VHqNY74brkPNmZpJj1uNvX",
       "courseId": 4,
@@ -468,7 +468,7 @@
       "maintain": "Trong bài học này, chúng ta sẽ tìm hiểu về event - sự kiện trong Javascript. Chúng ta sẽ tìm hiểu về các loại sự kiện, một số ví dụ và cách  thêm các sự kiện cho thẻ html."
     },
     {
-      "id": 25,
+      "id": 10,
       "name": "Biểu Thức Chính Quy - RegularExpressions",
       "url": "https://www.youtube.com/embed/R9ijAyPIFKI",
       "courseId": 4,
@@ -476,7 +476,7 @@
       "maintain": "Trong bài học này, chúng ta sẽ tìm hiểu về biểu thức chính quy - RegularExpressions trong Javascript"
     },
     {
-      "id": 26,
+      "id": 11,
       "name": "Promise trong Javascript",
       "url": "https://www.youtube.com/embed/XN2mt1i1kjk?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
       "courseId": 4,
@@ -484,7 +484,7 @@
       "maintain": "Trong bài học này, chúng ta sẽ biết thêm về 1 khái niệm quan trọng: Promise"
     },
     {
-      "id": 27,
+      "id": 12,
       "name": "Fetch - Fetch trong Javascript",
       "url": "https://www.youtube.com/embed/8KkM6JFjJZA?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
       "courseId": 4,
@@ -492,7 +492,7 @@
       "maintain": "Trong bài học này, chúng ta sẽ được biết về Fetch trong Javascript là gì"
     },
     {
-      "id": 28,
+      "id": 13,
       "name": "JSON server - Cài đặt thư viện JSON server",
       "url": "https://www.youtube.com/embed/5UJGRHNZc9M?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
       "courseId": 4,
@@ -500,7 +500,7 @@
       "maintain": "Trong bài học này, chúng ta sẽ cài đặt thư viện JSON Server và cách sử dụng nó"
     },
     {
-      "id": 29,
+      "id": 14,
       "name": "Sử dụng Postman làm việc với REST API",
       "url": "https://www.youtube.com/embed/CvX_5uyUXSs?list=PL_-VfJajZj0VgpFpEVFzS5Z-lkXtBe-x5",
       "courseId": 4,
@@ -588,7 +588,7 @@
       "maintain": "Chúng ta sẽ tìm hiểu về Thư viện clsx và classnames?"
     }
   ],
-  "uppcommingCourse":[
+  "uppcommingCourse": [
     {
       "id": 1,
       "name": "HTML, CSS Pro",
@@ -611,7 +611,6 @@
       "price": "5,000,000"
     }
   ],
-
   "cart": [],
   "account": [],
   "user": [
@@ -628,6 +627,39 @@
       "password": "123456",
       "confirm": "123456",
       "id": 2
+    },
+    {
+      "name": "cuong",
+      "email": "cuongha123@gmail.com",
+      "password": "cuong123",
+      "confirm": "cuong123",
+      "id": 3
+    }
+  ],
+  "banking": [
+    {
+      "id": 1,
+      "name": "Techcombank",
+      "logo": "https://printgo.vn/uploads/file-logo/1/512x512.d3a245120576b1318b29f0bcdba4aca9.ai.1.png",
+      "stk": "1903 8438 9630 12"
+    },
+    {
+      "id": 2,
+      "name": "MB Bank",
+      "logo": "https://nganhang24h.vn/wp-content/uploads/2020/02/mbbank-logo.png",
+      "stk": "0392 689 213"
+    },
+    {
+      "id": 3,
+      "name": "Momo",
+      "logo": "https://upload.wikimedia.org/wikipedia/vi/f/fe/MoMo_Logo.png?20201011055544",
+      "stk": "0392 689 213"
+    },
+    {
+      "id": 4,
+      "name": "TP Bank",
+      "logo": "https://static.wixstatic.com/media/9d8ed5_9b46446656b14efc88b058399cd81d9a~mv2.png/v1/fill/w_1182,h_1182,al_c/9d8ed5_9b46446656b14efc88b058399cd81d9a~mv2.png",
+      "stk": "292 58 555 555"
     }
   ]
 }

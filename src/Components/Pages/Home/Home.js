@@ -7,6 +7,7 @@ import FeCourse from "./Components/FECourses/FeCourse";
 import Target from "./Components/Target/Target";
 import Upcome from "./Components/Upcome/Upcome";
 import Partner from "./Components/Partner/Partner";
+import Teacher from "./Components/Teacher/Teacher";
 
 const cx = classNames.bind(style);
 
@@ -19,6 +20,7 @@ function Home() {
       <Target />
       <Upcome />
       <Partner />
+      <Teacher />
     </div>
   );
 }
