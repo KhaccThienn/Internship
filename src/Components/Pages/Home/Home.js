@@ -6,6 +6,7 @@ import PopularCourse from "./Components/PopularCourse/PopularCourse";
 import FeCourse from "./Components/FECourses/FeCourse";
 import Target from "./Components/Target/Target";
 import Upcome from "./Components/Upcome/Upcome";
+import Partner from "./Components/Partner/Partner";
 
 const cx = classNames.bind(style);
 
@@ -17,6 +18,7 @@ function Home() {
       <FeCourse />
       <Target />
       <Upcome />
+      <Partner />
     </div>
   );
 }

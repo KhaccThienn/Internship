@@ -21,6 +21,7 @@ function DetailFree({ setIdCourse }) {
   const { id } = useParams();
   const url = "http://localhost:9999/FECourse";
   const urlDetail = `http://localhost:9999/course/?courseId=${id}`;
+
   useEffect(() => {
     axios
       .get(`${url}/${id}`)
@@ -41,20 +42,20 @@ function DetailFree({ setIdCourse }) {
         console.log(err);
       });
     window.scrollTo(0, 0);
-    setIdCourse(id)
-  }, [id, urlDetail]);
+    setIdCourse(id);
+  }, [id, setIdCourse, urlDetail]);
 
-  const addToCart = (item) => {
-    setItems(JSON.parse(localStorage.getItem("cart"), "[]"));
-    console.log(item);
-    var itemm = {
-      course: item,
-      qty: 1,
+  const addToCartt = (item) => {
+    // setItems(JSON.parse(localStorage.getItem("cart"), "[]"));
+
+    var itemss = JSON.parse(localStorage.getItem("cart"), "[]");
+    var newItem = {
+      ...item,
     };
-
-    items.push(itemm);
-    localStorage.setItem("cart", JSON.stringify(items));
-    console.log(items);
+    console.log(newItem);
+    itemss.push(newItem);
+    localStorage.setItem("cart", JSON.stringify(itemss));
+    console.log(itemss);
 
     navigate("/cart");
   };
@@ -76,17 +77,21 @@ function DetailFree({ setIdCourse }) {
           <div className={cx("col-lg-6", "p-0", "learn-detail")}>
             {/* ảnh lấy từ json */}
             <img src={dCourse.image} alt="" className="img-detail" />
+
+            {dCourse.price === 0 ? (
+              <p className={cx("price")}>Miễn Phí</p>
+            ) : (
+              <p className={cx("price")}>{dCourse.price} vnd</p>
+            )}
+
             <p>
               {dCourse.price === 0 ? (
-                <Link
-                  to={`/learn`}
-                  className={cx("btn", "btn-checkout")}
-                >
+                <Link to={`/learn`} className={cx("btn", "btn-checkout")}>
                   {" "}
                   Hoc Ngay{" "}
                 </Link>
               ) : (
-                <button onClick={(e) => addToCart(dCourse)}> Mua Ngay </button>
+                <button onClick={(e) => addToCartt(dCourse)}> Mua Ngay </button>
               )}
             </p>
           </div>

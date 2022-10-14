@@ -16,6 +16,7 @@ import Cart from "./Components/Pages/Cart/Cart";
 import DetailNFree from "./Components/Pages/DetailNFree/DetailNFree";
 import Search from "./Components/Pages/Search/Search";
 import { useState } from 'react';
+import Checkout from "./Components/Pages/Checkout/Checkout";
 
 function App() {
 
@@ -63,6 +64,7 @@ function App() {
           element={<MasterLayouts children={<DetailNFree />} />}
         />
         <Route path="/cart" element={<MasterLayouts children={<Cart />} />} />
+        <Route path="/checkout" element={<MasterLayouts children={<Checkout />} />} />
         <Route
           path="/search"
           element={<MasterLayouts children={<Search />} />}
