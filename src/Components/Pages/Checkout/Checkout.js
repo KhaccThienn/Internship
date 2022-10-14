@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 import styled from "./checkout.module.css";
 import { BsTrash } from "react-icons/bs";
-import tech from "~/Asset/tech.png";
-import momo from "~/Asset/MoMo_Logo.png";
-import mb from "~/Asset/mbbank-logo.png";
-import tp from "~/Asset/tp.png";
 import qr from "~/Asset/qr.png";
 import axios from "axios";
 

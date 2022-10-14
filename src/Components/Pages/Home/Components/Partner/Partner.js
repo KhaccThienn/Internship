@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import classNames from "classnames/bind";
 import styled from "./Partner.module.css";
 import client1 from "~/Asset/client1.png"
